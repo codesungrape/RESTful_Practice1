@@ -1,6 +1,7 @@
 import {
   readData,
-  getGameByTitle,
+  getGameObjectData,
+  // getGameByTitle,
 } from "/Users/shantirai/Desktop/Projects/Practice_back-end/RESTful_project1/helperFunctions.js";
 import express from "express";
 
@@ -21,7 +22,7 @@ const PORT = 3000;
 
 app.get("/", async function (req, res) {
   try {
-    const allData = await readData();
+    const allData = await getGameObjectData();
     res.status(200).json({
       success: true,
       payload: allData,
