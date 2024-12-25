@@ -83,17 +83,52 @@ export async function getGameByTitle(title) {
 //## Task 3 - Get a particular set of data by PRICE  and etunrns filtered data via games prices.
 // AND add an endpoint to your REST API which returns a particular dataset in the response body- get back by name
 
-//Step 1: check access to game price
-// declare a container for all games data  by calling the function and saving it to data
-// lets find price- console.log for loop checking price of each game
-const allGames = await getAllGameObjects();
-console.log(allGames.length);
-for (let game of allGames) {
-  console.log(typeof game.price, game.price);
-}
-
-//Step 2:
+//Step 1:
 // what are the options for price filters? - 5 and under, 10 and under,
 // declare fuction
-// for loop
+// for loop inside another function that checks the price filter
 // isolate price variable and check against the filters
+// return correct output that is filtered.
+
+export async function getGamesByPrice(priceFilter) {
+  try {
+    // price filters are 5andUnder, 10andUnder, 15andUnder and 20andUnder
+    const priceFilterOptions = {
+      "5andUnder": 5,
+      "10andUnder": 10,
+      "15andUnder": 15,
+      "20andUnder": 20,
+    };
+
+    //create other required variables
+    const allGameData = await getAllGameObjects();
+    const filteredGames = [];
+
+    //check input format
+    if (!priceFilter in priceFilterOptions) {
+      return "Error!";
+    }
+
+    // if input format is correct run the code below
+    let priceCeiling = priceFilterOptions[priceFilter];
+
+    for (let game of allGameData) {
+      if (game.price >= 0 && game.price <= priceCeiling) {
+        filteredGames.push(game);
+      } else if (game.price > 5 && game.price <= priceCeiling) {
+        filteredGames.push(game);
+      } else if (game.price > 10 && game.price <= priceCeiling) {
+        filteredGames.push(game);
+      } else if (game.price > 15 && game.price <= priceCeiling) {
+        filteredGames.push(game);
+      }
+    }
+    return filteredGames;
+  } catch (error) {
+    console.error("Error:", error);
+  }
+}
+
+const everythingUnder5 = await getGamesByPrice("5andUnder");
+console.log(everythingUnder5);
+console.log(everythingUnder5.length);

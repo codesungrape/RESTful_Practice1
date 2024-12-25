@@ -2,7 +2,7 @@ import {
   readData,
   getAllGameObjects,
   getGameByTitle,
-  // getGameByTitle,
+  getGamesByPrice,
 } from "/Users/shantirai/Desktop/Projects/Practice_back-end/RESTful_project1/helperFunctions.js";
 import express from "express";
 
@@ -69,19 +69,43 @@ app.get("/:name", async function (req, res) {
   }
 });
 
+// TASK 3: Get a particular set of data (get games by price filter) AND add an endpoint to your REST API which returns a particular dataset in the response body- get back by name
+
+// set up the GET statemnt with end point
+// async ( req, res ) => {}
+// setup the try catch block
+// extract the query string from the req.body and save to a variable
+// use the right function with query string as the argument
+// return the res.status and res.json in correct format.
+
+/* Valid Price Filter Options 
+const priceFilterOptions = {
+    "5andUnder": 5,
+    "10andUnder": 10,
+    "15andUnder": 15,
+    "20andUnder": 20,
+  };
+*/
+
+app.get("/filter", async function (req, res) {
+  try {
+    const priceFilter = req.query.priceFilter;
+    const filteredResults = getGamesByPrice(priceFilter);
+
+    res.status(200).json({
+      success: true,
+      payload: filteredResults,
+    });
+  } catch (error) {
+    res.status(500).json({
+      success: false,
+      message: "Failed to fetch data",
+    });
+  }
+});
+
 // Start the server and listen on the defined port
 app.listen(PORT, () => {
   // Log a message to the console when the server is successfully running
   console.log(`App listening at http://localhost:${PORT}`);
 });
-
-/* [
-  'Galactic Bowling',
-  'Train Bandit',
-  'Jolt Project',
-  'Henosis',
-  'Two Weeks in Painland',
-  'Kooring VR Coding Adventure',
-  'Anarchy',
-  'Dark Throne'
-]*/
