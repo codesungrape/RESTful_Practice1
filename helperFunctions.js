@@ -1,7 +1,7 @@
 import fs from "fs/promises";
 import { get } from "http";
 
-// recreate a copy od the data so the original is preserved.
+// recreate a copy od the data so the original is preserved ????
 
 // Return all data
 // Part 1 of 2: function to read and return all data
@@ -24,7 +24,7 @@ export async function readData() {
 }
 
 // Part 2 of 2: create a function to return the data that i need aka the second element in the readData() result
-export async function getGameObjectData() {
+export async function getAllGameObjects() {
   const allData = await readData();
   let gamesObjects = [];
   allData.forEach((entry) => {
@@ -34,9 +34,6 @@ export async function getGameObjectData() {
   });
   return gamesObjects;
 }
-
-const gameObjData = await getGameObjectData();
-console.log(gameObjData);
 
 // Helper function that returns an array with all game titles
 function getAllGameTitles() {
@@ -59,48 +56,37 @@ function getAllGameTitles() {
   "Dark Throne",
 ];
 
-/*
-
 //## Task 2 - Get a particular set of data via TTILE AND add an endpoint to your REST API which returns a particular dataset in the response body- get back by name
 
 export async function getGameByTitle(title) {
-  title = title.toLowerCase().trim();
+  try {
+    //sanitize input string
+    title = title.replace(/\s+/g, "").toLowerCase();
+    console.log(title);
 
-  for (let i = 0; i < data.length; i++) {
-    let gameName = data[i][0];
+    const gamesObj = await getAllGameObjects();
 
-    let sanitized = gameName.replace(/\s+/g, "").toLowerCase();
-
-    // check all entries in the data array for lowerCase() matches
-    if (sanitized === title) {
-      // if match found, return that isolated object whole or only bring back the object with key Value pairs?
-      return data[i][1];
+    // use a looping mechanism if sanitized object.name === sanitized input title, return that object or retunr error msg
+    for (let game of gamesObj) {
+      // find the game title in object
+      console.log(game.name);
+      if (game.name.replace(/\s+/g, "").toLowerCase() === title) {
+        return game;
+      }
     }
-  }
-
-  // else return no object found with that title
-  return "Error, please check input.";
-}
-
-const anarchy = await getGameByTitle("anarchy");
-// access the genres array to see the output- is it just [Array] or will it give me the values inside array?
-console.log(Object.keys(anarchy).length); //returns 0
-
-// access the second part of the returned object anarchy[i][1] and find the 'genres' categories and return the values in there
-const anarchyObjOnly = anarchy[1];
-console.log(anarchyObjOnly);
-
-let categories;
-for (let key in anarchyObjOnly) {
-  if (key === "categories") {
-    categories = anarchyObjOnly[key];
+    return "Game not found";
+  } catch (error) {
+    console.error("Error:", error);
   }
 }
 
-console.log("categories:", categories);
+//## Task 3 - Get a particular set of data by PRICE AND add an endpoint to your REST API which returns a particular dataset in the response body- get back by name
+// declare a container for all games data  by calling the function and saving it to data
+// lets find price- console.log for loop checking price of each game
 
-//## Task 2 - Get a particular set of data OS AND add an endpoint to your REST API which returns a particular dataset in the response body- get back by name
+const allGames = await getAllGameObjects();
+for (let game of allGames) {
+  console.log(game.price);
+}
 
-
-
-*/
+// what are the options for price filters? - 5 and under, 10 and under

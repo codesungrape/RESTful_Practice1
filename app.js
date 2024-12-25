@@ -1,6 +1,7 @@
 import {
   readData,
-  getGameObjectData,
+  getAllGameObjects,
+  getGameByTitle,
   // getGameByTitle,
 } from "/Users/shantirai/Desktop/Projects/Practice_back-end/RESTful_project1/helperFunctions.js";
 import express from "express";
