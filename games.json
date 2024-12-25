@@ -777,5 +777,744 @@
             "RPG": 21,
             "Pixel Graphics": 5
         }
+    },
+    "Deadfall Adventures": 
+    {
+        "name": "Deadfall Adventures",
+        "release_date": "Nov 15, 2013",
+        "required_age": 0,
+        "price": 19.99,
+        "dlc_count": 0,
+        "detailed_description": "Deadfall Adventures is an action-driven first-person shooter, spiced up with elements from action-adventure games. Become an adventurer, hunt for treasures, explore unknown regions of the world and rescue the damsel in distress from the clutches of enemies, both earthly and not-so-earthly. Join James Lee Quatermain on his journey across the globe! The Story The year is 1938. James Lee Quatermain is a man of many talents, yet holding on to money isn't one of them. James is an adventurer by trade, just like his legendary great-grandfather Allan Quatermain. And he knows how to squeeze money out of this famous name of his, while at the same time despising it. Despising those who believe his great-grandfather's tales of the supernatural and those who make fun of them alike. Accordingly, Quatermain isn't all too keen on escorting Jennifer Goodwin, an US agent and former colleague of his, to an Egyptian temple structure in order to retrieve an ancient artifact - The Heart of Atlantis. Neither does he believe in the reputed invigorating qualities of this artifact, nor does he care the least that a division of the Ahnenerbe, the Nazi department specialized in the occult, is after The Heart as well. But life has its ways of changing one's perspective. Quatermain soon finds himself part of a hunt across the globe - from the stormy deserts of Egypt to the icy depths of the Arctic, and all the way to the steaming jungles of Guatemala. In long forgotten temple structures the thrill of the chase awakens the true adventurer in Quatermain, as he and agent Goodwin strive to be one step ahead of the Nazis and the Russians, one step closer to obtaining the Heart of Atlantis. And deep in these temples, where age-old guardians awake from their eternal slumber, James soon learns that his great-grandfather's stories are not as crazy as he had always believed. For all things live forever, though at times they sleep and are forgotten... Key Features Action -Adventure gameplay from a first-person perspective Set in the Quatermain-universe, created by H. R. Haggard Fast-paced action and intense, accurate FPS gun battles Adventurer equipment: compass, treasure maps, notebook and flashlight – necessary to solve ancient puzzles, find treasures and even to defeat certain types of enemies Puzzles that encourage you to explore the game environment and interact with it Environmental traps that can be used to eliminate enemies in many spectacular ways Exotic, picturesque locations from around the world – Egypt, Arctic and forgotten Mayan ruins in the jungles of Guatemala Compelling story faithful to the spirit of classic action-adventure movies 1930’s setting, including detailed weapon designs Unique adventurer-style multiplayer features and modes ",
+        "about_the_game": "Deadfall Adventures is an action-driven first-person shooter, spiced up with elements from action-adventure games. Become an adventurer, hunt for treasures, explore unknown regions of the world and rescue the damsel in distress from the clutches of enemies, both earthly and not-so-earthly. Join James Lee Quatermain on his journey across the globe! The Story The year is 1938. James Lee Quatermain is a man of many talents, yet holding on to money isn't one of them. James is an adventurer by trade, just like his legendary great-grandfather Allan Quatermain. And he knows how to squeeze money out of this famous name of his, while at the same time despising it. Despising those who believe his great-grandfather's tales of the supernatural and those who make fun of them alike. Accordingly, Quatermain isn't all too keen on escorting Jennifer Goodwin, an US agent and former colleague of his, to an Egyptian temple structure in order to retrieve an ancient artifact - The Heart of Atlantis. Neither does he believe in the reputed invigorating qualities of this artifact, nor does he care the least that a division of the Ahnenerbe, the Nazi department specialized in the occult, is after The Heart as well. But life has its ways of changing one's perspective. Quatermain soon finds himself part of a hunt across the globe - from the stormy deserts of Egypt to the icy depths of the Arctic, and all the way to the steaming jungles of Guatemala. In long forgotten temple structures the thrill of the chase awakens the true adventurer in Quatermain, as he and agent Goodwin strive to be one step ahead of the Nazis and the Russians, one step closer to obtaining the Heart of Atlantis. And deep in these temples, where age-old guardians awake from their eternal slumber, James soon learns that his great-grandfather's stories are not as crazy as he had always believed. For all things live forever, though at times they sleep and are forgotten... Key Features Action -Adventure gameplay from a first-person perspective Set in the Quatermain-universe, created by H. R. Haggard Fast-paced action and intense, accurate FPS gun battles Adventurer equipment: compass, treasure maps, notebook and flashlight – necessary to solve ancient puzzles, find treasures and even to defeat certain types of enemies Puzzles that encourage you to explore the game environment and interact with it Environmental traps that can be used to eliminate enemies in many spectacular ways Exotic, picturesque locations from around the world – Egypt, Arctic and forgotten Mayan ruins in the jungles of Guatemala Compelling story faithful to the spirit of classic action-adventure movies 1930’s setting, including detailed weapon designs Unique adventurer-style multiplayer features and modes ",
+        "short_description": "Deadfall Adventures is an action-driven first-person shooter, spiced up with elements from action-adventure games. Become an adventurer, hunt for treasures, explore unknown regions of the world and rescue the damsel in distress from the clutches of enemies, both earthly and not-so-earthly.",
+        "reviews": "",
+        "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/231330/header.jpg?t=1561964976",
+        "website": "http://www.deadfall-game.com/",
+        "support_url": "",
+        "support_email": "support@quanticlab.com",
+        "windows": true,
+        "mac": false,
+        "linux": true,
+        "metacritic_score": 53,
+        "metacritic_url": "https://www.metacritic.com/game/pc/deadfall-adventures?ftag=MCD-06-10aaa1f",
+        "achievements": 50,
+        "recommendations": 1140,
+        "notes": "",
+        "supported_languages": [
+            "English",
+            "German",
+            "Polish",
+            "French",
+            "Russian"
+        ],
+        "full_audio_languages": [
+            "English",
+            "German",
+            "Russian"
+        ],
+        "packages": [
+            {
+                "title": "Buy Deadfall Adventures",
+                "description": "",
+                "subs": [
+                    {
+                        "text": "Deadfall Adventures - $19.99",
+                        "description": "",
+                        "price": 19.99
+                    },
+                    {
+                        "text": "Deadfall Adventures Digital Deluxe - $24.99",
+                        "description": "",
+                        "price": 24.99
+                    }
+                ]
+            }
+        ],
+        "developers": [
+            "The Farm 51"
+        ],
+        "publishers": [
+            "THQ Nordic"
+        ],
+        "categories": [
+            "Single-player",
+            "Multi-player",
+            "Co-op",
+            "Steam Achievements",
+            "Steam Trading Cards",
+            "Partial Controller Support",
+            "Steam Cloud",
+            "Steam Leaderboards"
+        ],
+        "genres": [
+            "Action",
+            "Adventure"
+        ],
+        "screenshots": [
+            "https://cdn.akamai.steamstatic.com/steam/apps/231330/ss_e53512c37c3b4927efec4ef2dccec62084af5a57.1920x1080.jpg?t=1561964976",
+            "https://cdn.akamai.steamstatic.com/steam/apps/231330/ss_e5660e00480523bab71e5758c6606de0abf9bebf.1920x1080.jpg?t=1561964976",
+            "https://cdn.akamai.steamstatic.com/steam/apps/231330/ss_eb71d7cb42e05f68b50d14a3d2a8bd60145acb98.1920x1080.jpg?t=1561964976",
+            "https://cdn.akamai.steamstatic.com/steam/apps/231330/ss_6ce7d35e3e24b9f5d35d8ebb27a0ca793ad08361.1920x1080.jpg?t=1561964976",
+            "https://cdn.akamai.steamstatic.com/steam/apps/231330/ss_8b3791b17d55df0461262b23192a725f80de2593.1920x1080.jpg?t=1561964976",
+            "https://cdn.akamai.steamstatic.com/steam/apps/231330/ss_d30c427a0ce9d8b04ca0809ae71f5356e0204e73.1920x1080.jpg?t=1561964976",
+            "https://cdn.akamai.steamstatic.com/steam/apps/231330/ss_3109f03c94c404b51e5775ad86a60e81e132ad19.1920x1080.jpg?t=1561964976",
+            "https://cdn.akamai.steamstatic.com/steam/apps/231330/ss_0ae6376d1947a3907690ed0a725e81d589cf5760.1920x1080.jpg?t=1561964976",
+            "https://cdn.akamai.steamstatic.com/steam/apps/231330/ss_d4e66c6d44b80b5835acabad30cb60292267e922.1920x1080.jpg?t=1561964976",
+            "https://cdn.akamai.steamstatic.com/steam/apps/231330/ss_ccc8d733e5f5e565ceaa4be6d8edcf6bdab95079.1920x1080.jpg?t=1561964976",
+            "https://cdn.akamai.steamstatic.com/steam/apps/231330/ss_b6ef227c36746b589e96d57eb3b09fba2d2c1cc6.1920x1080.jpg?t=1561964976",
+            "https://cdn.akamai.steamstatic.com/steam/apps/231330/ss_18bb9893a8c153b743417f8ada5526d7e172170b.1920x1080.jpg?t=1561964976",
+            "https://cdn.akamai.steamstatic.com/steam/apps/231330/ss_5b3342439c4a7fcb93ab253be906817f849da3e7.1920x1080.jpg?t=1561964976",
+            "https://cdn.akamai.steamstatic.com/steam/apps/231330/ss_6338aab220eabdf66b1137d0ad71278b255ce39f.1920x1080.jpg?t=1561964976",
+            "https://cdn.akamai.steamstatic.com/steam/apps/231330/ss_8292d4dd3ea71a927d2b8b09c41a4856e72b59fd.1920x1080.jpg?t=1561964976",
+            "https://cdn.akamai.steamstatic.com/steam/apps/231330/ss_27bd5bdb26ed53217bf31d013e795d0d5376e880.1920x1080.jpg?t=1561964976",
+            "https://cdn.akamai.steamstatic.com/steam/apps/231330/ss_aac2586e6d2a200f246c11f399216576bad38dc1.1920x1080.jpg?t=1561964976",
+            "https://cdn.akamai.steamstatic.com/steam/apps/231330/ss_aac19564f29ac14d3b70f1bbae5d6233284530cc.1920x1080.jpg?t=1561964976",
+            "https://cdn.akamai.steamstatic.com/steam/apps/231330/ss_763fee337f9ec69f6c6724460264e7c92d09c1ba.1920x1080.jpg?t=1561964976",
+            "https://cdn.akamai.steamstatic.com/steam/apps/231330/ss_f70a0c7cc773129ef12bd9ebcaf9bfcba74c637c.1920x1080.jpg?t=1561964976"
+        ],
+        "movies": [
+            "http://cdn.akamai.steamstatic.com/steam/apps/2029553/movie_max.mp4?t=1490862566",
+            "http://cdn.akamai.steamstatic.com/steam/apps/2030185/movie_max.mp4?t=1490862575",
+            "http://cdn.akamai.steamstatic.com/steam/apps/2028438/movie_max.mp4?t=1490862584",
+            "http://cdn.akamai.steamstatic.com/steam/apps/2030143/movie_max.mp4?t=1493809128",
+            "http://cdn.akamai.steamstatic.com/steam/apps/2030092/movie_max.mp4?t=1493809135"
+        ],
+        "user_score": 0,
+        "score_rank": "",
+        "positive": 1716,
+        "negative": 628,
+        "estimated_owners": "100000 - 200000",
+        "average_playtime_forever": 324,
+        "average_playtime_2weeks": 0,
+        "median_playtime_forever": 431,
+        "median_playtime_2weeks": 0,
+        "peak_ccu": 4,
+        "tags": {
+            "Adventure": 136,
+            "Action": 122,
+            "FPS": 96,
+            "Shooter": 70,
+            "Multiplayer": 68,
+            "First-Person": 68,
+            "Singleplayer": 63,
+            "Puzzle": 55,
+            "Zombies": 40,
+            "Co-op": 30,
+            "Indie": 27,
+            "Horror": 20,
+            "Survival": 19,
+            "Exploration": 17,
+            "Open World": 7,
+            "Action-Adventure": 7,
+            "World War II": 6,
+            "Strategy": 6
+        }
+    },
+    "Who We Are Now": 
+    {
+        "name": "Who We Are Now",
+        "release_date": "May 7, 2019",
+        "required_age": 0,
+        "price": 14.99,
+        "dlc_count": 2,
+        "detailed_description": "Who We Are Now is a queer, post-apocalyptic visual novel set ten years after a nuclear war scoured the earth. It follows Wes, a young man who, drowning in the memories of everyone he's lost, returns to a settlement called Home in search of something to ease his pain. Upon reaching the settlement, he's tasked with guiding four other men, each dealing with their own tragedy. As he helps them, Wes begins to explore himself as well. Together, they will help each other move past the trauma of their pasts and find love along the way. Please note that Who We Are Now contains explicit sexual scenes between men. These scenes are optional. ",
+        "about_the_game": "Who We Are Now is a queer, post-apocalyptic visual novel set ten years after a nuclear war scoured the earth. It follows Wes, a young man who, drowning in the memories of everyone he's lost, returns to a settlement called Home in search of something to ease his pain. Upon reaching the settlement, he's tasked with guiding four other men, each dealing with their own tragedy. As he helps them, Wes begins to explore himself as well. Together, they will help each other move past the trauma of their pasts and find love along the way. Please note that Who We Are Now contains explicit sexual scenes between men. These scenes are optional. ",
+        "short_description": "Who We Are Now is a queer, post-apocalyptic visual novel set ten years after a nuclear war scoured the earth. It follows Wes, a young man who, drowning in the memories of everyone he's lost, returns to a settlement called Home in search of something to ease his pain.",
+        "reviews": "",
+        "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/1056520/header.jpg?t=1560310334",
+        "website": "",
+        "support_url": "",
+        "support_email": "chromafieldgames@gmail.com",
+        "windows": true,
+        "mac": true,
+        "linux": true,
+        "metacritic_score": 0,
+        "metacritic_url": "",
+        "achievements": 0,
+        "recommendations": 0,
+        "notes": "Please note that Who We Are Now contains explicit sexual scenes between men. These scenes are optional.",
+        "supported_languages": [
+            "English"
+        ],
+        "full_audio_languages": [],
+        "packages": [
+            {
+                "title": "Buy Who We Are Now",
+                "description": "",
+                "subs": [
+                    {
+                        "text": "Who We Are Now - $14.99",
+                        "description": "",
+                        "price": 14.99
+                    }
+                ]
+            }
+        ],
+        "developers": [
+            "Chroma Field Games"
+        ],
+        "publishers": [
+            "Chroma Field Games"
+        ],
+        "categories": [
+            "Single-player"
+        ],
+        "genres": [
+            "Indie"
+        ],
+        "screenshots": [
+            "https://cdn.akamai.steamstatic.com/steam/apps/1056520/ss_620218450140ec3e297273c6a7938babcdcc8bba.1920x1080.jpg?t=1560310334",
+            "https://cdn.akamai.steamstatic.com/steam/apps/1056520/ss_a9c718bb71735778c15dbad62963f3df1c3f3548.1920x1080.jpg?t=1560310334",
+            "https://cdn.akamai.steamstatic.com/steam/apps/1056520/ss_2240c60e98c5a5a1ecfe5e479d9a0d1c471d99d7.1920x1080.jpg?t=1560310334",
+            "https://cdn.akamai.steamstatic.com/steam/apps/1056520/ss_16cf7eb7a25554b272f514e0d9935a745fa4c1cb.1920x1080.jpg?t=1560310334",
+            "https://cdn.akamai.steamstatic.com/steam/apps/1056520/ss_50a12f1b5d201e897f58d677e8a784d288c078da.1920x1080.jpg?t=1560310334",
+            "https://cdn.akamai.steamstatic.com/steam/apps/1056520/ss_bcbb31961fce84f6ad2db9122e393048a93cd87c.1920x1080.jpg?t=1560310334",
+            "https://cdn.akamai.steamstatic.com/steam/apps/1056520/ss_df229e522a4f00ef9ec5c56249722a2a4d45a7ad.1920x1080.jpg?t=1560310334"
+        ],
+        "movies": [
+            "http://cdn.akamai.steamstatic.com/steam/apps/256748690/movie_max.mp4?t=1556070511"
+        ],
+        "user_score": 0,
+        "score_rank": "",
+        "positive": 0,
+        "negative": 0,
+        "estimated_owners": "0 - 20000",
+        "average_playtime_forever": 0,
+        "average_playtime_2weeks": 0,
+        "median_playtime_forever": 0,
+        "median_playtime_2weeks": 0,
+        "peak_ccu": 0,
+        "tags": []
+    },
+    "Reigns: Game of Thrones": 
+    {
+        "name": "Reigns: Game of Thrones",
+        "release_date": "Oct 18, 2018",
+        "required_age": 0,
+        "price": 3.99,
+        "dlc_count": 0,
+        "detailed_description": "Reigns: Game of Thrones is the heir to the award-winning HBO® TV series Game of Thrones® and the smash-hit swipe ‘em up series Reigns from Nerial and Devolver Digital. Through the fiery visions of Melisandre, claim the Iron Throne as Cersei Lannister, Jon Snow, Daenerys Targaryen, and more to carefully navigate the complex relationships and hostile factions of the Seven Kingdoms. Employ ruthless tactics to outwit political rivals and wield impervious charm on your fickle bannerman. Maintain the balance and favor of the people to extend your reign and maybe, one day, survive the horrors of the coming winter. A Formidable Cast: Rule from the Iron Throne as Cersei Lannister, Jon Snow, Daenerys Targaryen, Tyrion Lannister, Sansa Stark, and more. Change between each king and queen you unlock to face challenges and mysteries unique to their story. Impose Your Will: Swipe left or right to change the fate of the Seven Kingdoms forever as you hear the impassioned pleas and unpredictable demands from the people of Westeros. If a particular character becomes bothersome, tear their card in half to unburden Your Majesty with their concerns – but at what cost? Reenvision Westeros: Melisandre’s visions are your playing field and extend beyond the TV series to imagine the many fates of those that would sit upon the Iron Throne. Rebuild the Great Sept of Baelor as Cersei or discover the path of the Seven Kingdoms if Sansa Stark had married Jaime Lannister. Regal Mini Games: Even the most powerful rulers need to set aside their worries and partake in more trivial matters now and then. From jousting to tavern brawls, these distractions aren’t without consequence! A Grander Reigns: Fans of the Reigns series will be delighted with the biggest, deepest entry in the series that does not simply retell the stories you know but rather lets you create new adventures at your whim. Iconic Soundtrack: Decide the fate of Westeros and those that reside in your land to the soaring score of the HBO series by Ramin Djawadi. ©2018 Home Box Office, Inc. All Rights Reserved. HBO and related trademarks are the property of Home Box Office, Inc. ",
+        "about_the_game": "Reigns: Game of Thrones is the heir to the award-winning HBO® TV series Game of Thrones® and the smash-hit swipe ‘em up series Reigns from Nerial and Devolver Digital. Through the fiery visions of Melisandre, claim the Iron Throne as Cersei Lannister, Jon Snow, Daenerys Targaryen, and more to carefully navigate the complex relationships and hostile factions of the Seven Kingdoms. Employ ruthless tactics to outwit political rivals and wield impervious charm on your fickle bannerman. Maintain the balance and favor of the people to extend your reign and maybe, one day, survive the horrors of the coming winter. A Formidable Cast: Rule from the Iron Throne as Cersei Lannister, Jon Snow, Daenerys Targaryen, Tyrion Lannister, Sansa Stark, and more. Change between each king and queen you unlock to face challenges and mysteries unique to their story. Impose Your Will: Swipe left or right to change the fate of the Seven Kingdoms forever as you hear the impassioned pleas and unpredictable demands from the people of Westeros. If a particular character becomes bothersome, tear their card in half to unburden Your Majesty with their concerns – but at what cost? Reenvision Westeros: Melisandre’s visions are your playing field and extend beyond the TV series to imagine the many fates of those that would sit upon the Iron Throne. Rebuild the Great Sept of Baelor as Cersei or discover the path of the Seven Kingdoms if Sansa Stark had married Jaime Lannister. Regal Mini Games: Even the most powerful rulers need to set aside their worries and partake in more trivial matters now and then. From jousting to tavern brawls, these distractions aren’t without consequence! A Grander Reigns: Fans of the Reigns series will be delighted with the biggest, deepest entry in the series that does not simply retell the stories you know but rather lets you create new adventures at your whim. Iconic Soundtrack: Decide the fate of Westeros and those that reside in your land to the soaring score of the HBO series by Ramin Djawadi. ©2018 Home Box Office, Inc. All Rights Reserved. HBO and related trademarks are the property of Home Box Office, Inc. ",
+        "short_description": "Reigns: Game of Thrones is the heir to the award-winning HBO® TV series Game of Thrones® and the smash-hit swipe ‘em up series Reigns from Nerial and Devolver Digital.",
+        "reviews": "“Reigns: Game of Thrones is so much better than any other attempt to bring Game of Thrones to video games so far.” Digitally Downloaded “A Westerosi romp with welcome wrinkles to the established Reigns formula” Gamespot “Reigns is probably the best Game of Thrones game we’ve played to date.” Trusted Reviews ",
+        "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/897820/header.jpg?t=1645113692",
+        "website": "http://www.reignsgame.com",
+        "support_url": "http://www.reignsgame.com",
+        "support_email": "",
+        "windows": true,
+        "mac": true,
+        "linux": true,
+        "metacritic_score": 84,
+        "metacritic_url": "https://www.metacritic.com/game/pc/reigns-game-of-thrones?ftag=MCD-06-10aaa1f",
+        "achievements": 10,
+        "recommendations": 815,
+        "notes": "",
+        "supported_languages": [
+            "English",
+            "French",
+            "German",
+            "Spanish - Spain",
+            "Italian",
+            "Japanese",
+            "Korean",
+            "Portuguese - Brazil",
+            "Russian",
+            "Simplified Chinese",
+            "Traditional Chinese"
+        ],
+        "full_audio_languages": [],
+        "packages": [
+            {
+                "title": "Buy Reigns: Game of Thrones",
+                "description": "",
+                "subs": [
+                    {
+                        "text": "Reigns: Game of Thrones - $3.99",
+                        "description": "",
+                        "price": 3.99
+                    }
+                ]
+            }
+        ],
+        "developers": [
+            "Nerial"
+        ],
+        "publishers": [
+            "Devolver Digital"
+        ],
+        "categories": [
+            "Single-player",
+            "Steam Achievements",
+            "Full controller support"
+        ],
+        "genres": [
+            "Adventure",
+            "Indie",
+            "RPG"
+        ],
+        "screenshots": [
+            "https://cdn.akamai.steamstatic.com/steam/apps/897820/ss_248ae701072840bf58134ed878e45bc0ab01883e.1920x1080.jpg?t=1645113692",
+            "https://cdn.akamai.steamstatic.com/steam/apps/897820/ss_db1c80d61b9a0551e8d51d1fb72f627436b02fa2.1920x1080.jpg?t=1645113692",
+            "https://cdn.akamai.steamstatic.com/steam/apps/897820/ss_a9ca4d61981268f01e0373a3a931c023fd7a9860.1920x1080.jpg?t=1645113692",
+            "https://cdn.akamai.steamstatic.com/steam/apps/897820/ss_3495278259a789c0c1fe57b58e1eead7dd96759d.1920x1080.jpg?t=1645113692",
+            "https://cdn.akamai.steamstatic.com/steam/apps/897820/ss_3083d5a7cf1e8bb9490fdf6d1a91b66368d6faa1.1920x1080.jpg?t=1645113692",
+            "https://cdn.akamai.steamstatic.com/steam/apps/897820/ss_ddb2eb98a34574d43ad3c1f5ecb156e41f2a2635.1920x1080.jpg?t=1645113692",
+            "https://cdn.akamai.steamstatic.com/steam/apps/897820/ss_f9e46cf4209b393da4e66aec684511d567948262.1920x1080.jpg?t=1645113692",
+            "https://cdn.akamai.steamstatic.com/steam/apps/897820/ss_c5d6e98e724c95b9b1b1815bd793b31260a79390.1920x1080.jpg?t=1645113692",
+            "https://cdn.akamai.steamstatic.com/steam/apps/897820/ss_5baa97dd9233de38b60ec82a7846afcb504e7dcf.1920x1080.jpg?t=1645113692",
+            "https://cdn.akamai.steamstatic.com/steam/apps/897820/ss_af4d20798913a77f9e64efa1a65ed47e54bd0a93.1920x1080.jpg?t=1645113692"
+        ],
+        "movies": [
+            "http://cdn.akamai.steamstatic.com/steam/apps/256726100/movie_max.mp4?t=1535036307",
+            "http://cdn.akamai.steamstatic.com/steam/apps/256732488/movie_max.mp4?t=1539862930"
+        ],
+        "user_score": 0,
+        "score_rank": "",
+        "positive": 698,
+        "negative": 203,
+        "estimated_owners": "50000 - 100000",
+        "average_playtime_forever": 83,
+        "average_playtime_2weeks": 0,
+        "median_playtime_forever": 76,
+        "median_playtime_2weeks": 0,
+        "peak_ccu": 2,
+        "tags": {
+            "RPG": 79,
+            "Indie": 66,
+            "Card Game": 60,
+            "Adventure": 57,
+            "Choices Matter": 43,
+            "2D": 32,
+            "Medieval": 32,
+            "Singleplayer": 28,
+            "Minimalist": 27,
+            "Choose Your Own Adventure": 24,
+            "Strategy": 23,
+            "Story Rich": 21,
+            "Dark Humor": 21,
+            "Great Soundtrack": 20,
+            "Difficult": 19,
+            "Dark Comedy": 16,
+            "Funny": 15,
+            "Comedy": 15,
+            "Cute": 14
+        }
+    },
+    "CasinoRPG": 
+    {
+        "name": "CasinoRPG",
+        "release_date": "Jan 16, 2018",
+        "required_age": 0,
+        "price": 0.0,
+        "dlc_count": 0,
+        "detailed_description": "Check Out Our Upcoming Game / About the Game Play the tables or own the strip in this Vegas-themed MMORPG that merges role-playing, tycoon, city-building and casino games. Use your winnings in multiplayer casino games like slots, poker, blackjack and roulette as you rise from janitor to casino mogul. Play everything from casino games and missions to tycoon simulations and city building in real-time with others from all over the world. Reshape the virtual history of this ever-evolving city with every action you take. The game is set in a persistent open world where every casino is owned, designed and operated by other players. You and thousands of others quite literally design the city around you. Buy your own plots of land and build your own casinos on them. This isn’t limited to the outside as you can also design and manage your casino floors in a real-time tycoon simulation. You are a new face in town and get a job as a janitor in one of the casinos. Follow the story of characters like the Mayor and Detective Watts as you complete missions to work your way up to casino mogul status. In addition to all of the world building, you can also play a variety of casino games. We currently have slots, poker, blackjack, roulette, solitaire, video poker, bingo and various lottery games like scratchers. More games are being added all of the time.",
+        "about_the_game": "Play the tables or own the strip in this Vegas-themed MMORPG that merges role-playing, tycoon, city-building and casino games. Use your winnings in multiplayer casino games like slots, poker, blackjack and roulette as you rise from janitor to casino mogul. Play everything from casino games and missions to tycoon simulations and city building in real-time with others from all over the world. Reshape the virtual history of this ever-evolving city with every action you take. The game is set in a persistent open world where every casino is owned, designed and operated by other players. You and thousands of others quite literally design the city around you. Buy your own plots of land and build your own casinos on them. This isn’t limited to the outside as you can also design and manage your casino floors in a real-time tycoon simulation. You are a new face in town and get a job as a janitor in one of the casinos. Follow the story of characters like the Mayor and Detective Watts as you complete missions to work your way up to casino mogul status. In addition to all of the world building, you can also play a variety of casino games. We currently have slots, poker, blackjack, roulette, solitaire, video poker, bingo and various lottery games like scratchers. More games are being added all of the time.",
+        "short_description": "Play the tables or own the strip in this Vegas-themed MMORPG that merges role-playing, tycoon, city-building and casino games. Use your winnings in multiplayer casino games like slots, poker, blackjack and roulette as you rise from janitor to casino mogul.",
+        "reviews": "",
+        "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/658970/header.jpg?t=1652288047",
+        "website": "https://casinorpg.com",
+        "support_url": "https://goldfire.me/contact",
+        "support_email": "support@goldfire.me",
+        "windows": true,
+        "mac": true,
+        "linux": false,
+        "metacritic_score": 0,
+        "metacritic_url": "",
+        "achievements": 211,
+        "recommendations": 0,
+        "notes": "",
+        "supported_languages": [
+            "English"
+        ],
+        "full_audio_languages": [],
+        "packages": [],
+        "developers": [
+            "GoldFire Studios"
+        ],
+        "publishers": [
+            "GoldFire Studios"
+        ],
+        "categories": [
+            "Multi-player",
+            "MMO",
+            "PvP",
+            "Online PvP",
+            "Co-op",
+            "Online Co-op",
+            "Cross-Platform Multiplayer",
+            "Steam Achievements",
+            "In-App Purchases"
+        ],
+        "genres": [
+            "Casual",
+            "Free to Play",
+            "Indie",
+            "Massively Multiplayer",
+            "RPG",
+            "Simulation"
+        ],
+        "screenshots": [
+            "https://cdn.akamai.steamstatic.com/steam/apps/658970/ss_cb6b1d05103fc193815345eee1818bc21c0a44b6.1920x1080.jpg?t=1652288047",
+            "https://cdn.akamai.steamstatic.com/steam/apps/658970/ss_ed9fa2227bfa536a586b02c08fba9fee125719f5.1920x1080.jpg?t=1652288047",
+            "https://cdn.akamai.steamstatic.com/steam/apps/658970/ss_7cb8d3df1abae633f94a39e0ca9fb621a8fe6bf4.1920x1080.jpg?t=1652288047",
+            "https://cdn.akamai.steamstatic.com/steam/apps/658970/ss_e4d3cd874177a7ced56184c47d3d3fa73b6a5770.1920x1080.jpg?t=1652288047",
+            "https://cdn.akamai.steamstatic.com/steam/apps/658970/ss_641fc68fc66438da263db5dea645537ae544de95.1920x1080.jpg?t=1652288047",
+            "https://cdn.akamai.steamstatic.com/steam/apps/658970/ss_724cee8166a82215d502138ffc17ba0b97be78ba.1920x1080.jpg?t=1652288047",
+            "https://cdn.akamai.steamstatic.com/steam/apps/658970/ss_57073878d62bb16c416c3eb3943984c6b7549aae.1920x1080.jpg?t=1652288047",
+            "https://cdn.akamai.steamstatic.com/steam/apps/658970/ss_dde34b71b943c0dbb42901afe9e310e2776aba54.1920x1080.jpg?t=1652288047",
+            "https://cdn.akamai.steamstatic.com/steam/apps/658970/ss_c7970e33c3846cff1b6779017c52fa9cc208af07.1920x1080.jpg?t=1652288047"
+        ],
+        "movies": [
+            "http://cdn.akamai.steamstatic.com/steam/apps/256687618/movie_max.mp4?t=1515593268"
+        ],
+        "user_score": 0,
+        "score_rank": "",
+        "positive": 138,
+        "negative": 84,
+        "estimated_owners": "50000 - 100000",
+        "average_playtime_forever": 2,
+        "average_playtime_2weeks": 0,
+        "median_playtime_forever": 2,
+        "median_playtime_2weeks": 0,
+        "peak_ccu": 19,
+        "tags": {
+            "Simulation": 125,
+            "Massively Multiplayer": 119,
+            "RPG": 116,
+            "Management": 114,
+            "Gambling": 109,
+            "Card Game": 102,
+            "City Builder": 99,
+            "Building": 97,
+            "Free to Play": 95,
+            "Casual": 93,
+            "Indie": 91,
+            "Multiplayer": 86,
+            "Open World": 81,
+            "MMORPG": 74,
+            "Colorful": 71,
+            "Isometric": 63,
+            "Kickstarter": 57,
+            "Character Customization": 53,
+            "Solitaire": 49,
+            "Time Management": 46
+        }
+    },
+    "Fuyu no Tsuma": 
+    {
+        "name": "Fuyu no Tsuma",
+        "release_date": "Oct 15, 2021",
+        "required_age": 0,
+        "price": 1.99,
+        "dlc_count": 0,
+        "detailed_description": "General Fuyu no Tsuma is an addicting game in which you have to solve puzzles with Lovely Girls Incredible Atmosphere , Great Music , lots of levels with girls art in HD quality. The game is great for relaxing after a hard day. Features Several difficulty levels. Relaxing gameplay 5 HD quality art with beautiful girls Pleasant atmosphere. Game Modes: EASY - 4x4 MEDIUM - 4x6 ADVANCED - 6x10 HARD - 8x14 EPIC - 10x16 ",
+        "about_the_game": "General Fuyu no Tsuma is an addicting game in which you have to solve puzzles with Lovely Girls Incredible Atmosphere , Great Music , lots of levels with girls art in HD quality. The game is great for relaxing after a hard day. Features Several difficulty levels. Relaxing gameplay 5 HD quality art with beautiful girls Pleasant atmosphere. Game Modes: EASY - 4x4 MEDIUM - 4x6 ADVANCED - 6x10 HARD - 8x14 EPIC - 10x16 ",
+        "short_description": "Fuyu no Tsuma is an addicting game in which you have to solve puzzles with Lovely Girls.The game is perfect for relaxing.",
+        "reviews": "",
+        "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/1777550/header.jpg?t=1634291794",
+        "website": "",
+        "support_url": "",
+        "support_email": "rosaspecialstuidio@gmail.com",
+        "windows": true,
+        "mac": false,
+        "linux": false,
+        "metacritic_score": 0,
+        "metacritic_url": "",
+        "achievements": 0,
+        "recommendations": 0,
+        "notes": "",
+        "supported_languages": [
+            "English"
+        ],
+        "full_audio_languages": [
+            "English"
+        ],
+        "packages": [
+            {
+                "title": "Buy Fuyu no Tsuma",
+                "description": "",
+                "subs": [
+                    {
+                        "text": "Fuyu no Tsuma - $1.99",
+                        "description": "",
+                        "price": 1.99
+                    }
+                ]
+            }
+        ],
+        "developers": [
+            "玫瑰工作室"
+        ],
+        "publishers": [
+            "玫瑰工作室"
+        ],
+        "categories": [
+            "Single-player"
+        ],
+        "genres": [
+            "Action",
+            "Adventure",
+            "Indie"
+        ],
+        "screenshots": [
+            "https://cdn.akamai.steamstatic.com/steam/apps/1777550/ss_0f677ec728af79836da95402747b1f0a54369ea0.1920x1080.jpg?t=1634291794",
+            "https://cdn.akamai.steamstatic.com/steam/apps/1777550/ss_6efc087206991c810df9c7329be121c2aaaee33b.1920x1080.jpg?t=1634291794",
+            "https://cdn.akamai.steamstatic.com/steam/apps/1777550/ss_6cdb8154091d4f933944ae9f0848859e434303f0.1920x1080.jpg?t=1634291794",
+            "https://cdn.akamai.steamstatic.com/steam/apps/1777550/ss_e0fe303686a9561203a9662a0979bdaec5437bb3.1920x1080.jpg?t=1634291794",
+            "https://cdn.akamai.steamstatic.com/steam/apps/1777550/ss_bb2f409a85a8060986f21ef16b334bf964087988.1920x1080.jpg?t=1634291794",
+            "https://cdn.akamai.steamstatic.com/steam/apps/1777550/ss_3a09d841f77bf1e876954cffd170858c97d096a1.1920x1080.jpg?t=1634291794"
+        ],
+        "movies": [
+            "http://cdn.akamai.steamstatic.com/steam/apps/256853884/movie_max.mp4?t=1633085092"
+        ],
+        "user_score": 0,
+        "score_rank": "",
+        "positive": 2,
+        "negative": 2,
+        "estimated_owners": "0 - 20000",
+        "average_playtime_forever": 0,
+        "average_playtime_2weeks": 0,
+        "median_playtime_forever": 0,
+        "median_playtime_2weeks": 0,
+        "peak_ccu": 0,
+        "tags": {
+            "Adventure": 179,
+            "Indie": 170,
+            "Casual": 155,
+            "Puzzle": 145,
+            "Hentai": 140,
+            "Anime": 129,
+            "2D": 122,
+            "Colorful": 114,
+            "Cute": 107,
+            "Atmospheric": 96,
+            "Story Rich": 94,
+            "Singleplayer": 83,
+            "Shooter": 68,
+            "Sexual Content": 56,
+            "Mature": 40,
+            "Visual Novel": 26,
+            "Dating Sim": 24,
+            "Action": 21
+        }
+    },
+    "A Journey Through Valhalla": 
+    {
+        "name": "A Journey Through Valhalla",
+        "release_date": "Sep 12, 2021",
+        "required_age": 0,
+        "price": 5.99,
+        "dlc_count": 0,
+        "detailed_description": "A Journey Through Valhalla was developed by three friends in their spare time and is by no means a AAA game. It still gives you several hours of fun and even more so if you like beating up your friends! Discover the worlds of Yggdrasil as you and your teammates help the Gods in this three player co-op Action RPG where you use your powerful abilities to lay waste to the enemies of Valhalla. Level up and build your character with our advanced skill tree and powerful weapons. Co-op Don't worry if you can't handle the boss alone. Just bring a friend or two along to keep the boss occupied while you stab him in the back. But make sure not to accidentally stab your friends while you're at it! Dying Death is not the end. Each try will get you and your team closer to your goal. You probably want to change tactics if you keep on dying though. Also, watch out for that friendly fire! Looting Look for the loot to find a host of powerful weapons, and useful armor to protect you in battle. Or maybe collect as much valuable items you can carry to sell for traits and gear back at the shop.",
+        "about_the_game": "A Journey Through Valhalla was developed by three friends in their spare time and is by no means a AAA game. It still gives you several hours of fun and even more so if you like beating up your friends! Discover the worlds of Yggdrasil as you and your teammates help the Gods in this three player co-op Action RPG where you use your powerful abilities to lay waste to the enemies of Valhalla. Level up and build your character with our advanced skill tree and powerful weapons. Co-op Don't worry if you can't handle the boss alone. Just bring a friend or two along to keep the boss occupied while you stab him in the back. But make sure not to accidentally stab your friends while you're at it! Dying Death is not the end. Each try will get you and your team closer to your goal. You probably want to change tactics if you keep on dying though. Also, watch out for that friendly fire! Looting Look for the loot to find a host of powerful weapons, and useful armor to protect you in battle. Or maybe collect as much valuable items you can carry to sell for traits and gear back at the shop.",
+        "short_description": "New and strange events are breaking the status quo in Valhalla which is causing unrest among the gods. Venture forth either alone or with your fellow einhärjers in this Action RPG created by three friends in their spare time.",
+        "reviews": "",
+        "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/763550/header.jpg?t=1633891267",
+        "website": "https://valhalla-game.com",
+        "support_url": "https://valhalla-game.com/contact.html",
+        "support_email": "",
+        "windows": true,
+        "mac": false,
+        "linux": false,
+        "metacritic_score": 0,
+        "metacritic_url": "",
+        "achievements": 20,
+        "recommendations": 0,
+        "notes": "",
+        "supported_languages": [
+            "English"
+        ],
+        "full_audio_languages": [
+            "English"
+        ],
+        "packages": [
+            {
+                "title": "Buy A Journey Through Valhalla",
+                "description": "",
+                "subs": [
+                    {
+                        "text": "A Journey Through Valhalla - $5.99",
+                        "description": "",
+                        "price": 5.99
+                    }
+                ]
+            }
+        ],
+        "developers": [
+            "Team Sämst"
+        ],
+        "publishers": [
+            "Team Sämst"
+        ],
+        "categories": [
+            "Single-player",
+            "Multi-player",
+            "Co-op",
+            "Online Co-op",
+            "Steam Achievements"
+        ],
+        "genres": [
+            "Action",
+            "Adventure",
+            "RPG"
+        ],
+        "screenshots": [
+            "https://cdn.akamai.steamstatic.com/steam/apps/763550/ss_8b247609fe348e5674cfdd14e117d598c558f41c.1920x1080.jpg?t=1633891267",
+            "https://cdn.akamai.steamstatic.com/steam/apps/763550/ss_653c0ac4d029db76f8738fee79ec14918c432d29.1920x1080.jpg?t=1633891267",
+            "https://cdn.akamai.steamstatic.com/steam/apps/763550/ss_461edf1fcb6599a89516513f83352f8e20234d33.1920x1080.jpg?t=1633891267",
+            "https://cdn.akamai.steamstatic.com/steam/apps/763550/ss_57512a1c4ff8000cc49c06fdfb05e51a6b819cda.1920x1080.jpg?t=1633891267",
+            "https://cdn.akamai.steamstatic.com/steam/apps/763550/ss_557bf575f3c4c8aaf9dd674eaafa4a064d1665b2.1920x1080.jpg?t=1633891267"
+        ],
+        "movies": [
+            "http://cdn.akamai.steamstatic.com/steam/apps/256841593/movie_max.mp4?t=1626026817"
+        ],
+        "user_score": 0,
+        "score_rank": "",
+        "positive": 3,
+        "negative": 3,
+        "estimated_owners": "0 - 20000",
+        "average_playtime_forever": 0,
+        "average_playtime_2weeks": 0,
+        "median_playtime_forever": 0,
+        "median_playtime_2weeks": 0,
+        "peak_ccu": 0,
+        "tags": {
+            "Souls-like": 252,
+            "Co-op": 246,
+            "Dungeon Crawler": 242,
+            "PvE": 237,
+            "RPG": 233,
+            "Action RPG": 230,
+            "Action-Adventure": 220,
+            "Action": 208,
+            "3D": 207,
+            "Third Person": 198,
+            "Colorful": 177,
+            "Fantasy": 166,
+            "Loot": 153,
+            "Magic": 151,
+            "Medieval": 136,
+            "Adventure": 122,
+            "Mythology": 121,
+            "Combat": 85,
+            "Multiplayer": 66,
+            "Co-op Campaign": 46
+        }
+    },
+    "Countdown": 
+    {
+        "name": "COUNTDOWN",
+        "release_date": "Jan 10, 2021",
+        "required_age": 0,
+        "price": 0.99,
+        "dlc_count": 0,
+        "detailed_description": "Play with up to 12 players online and work together to prepare to escape the space station before it is destroyed. But watch out! Androids have 'woken up' and are attempting to destroy the station and all witnesses! I am the sole developer of COUNTDOWN. New feature development has been put on hold as I focus on the release of my next title. Any game-breaking bugs will be addressed as soon as possible. Please report any via email or our discord server. In-game proximity chat! Crewmates: Complete tasks to delay the self-destruct sequence and prepare your ship for evacuation Androids will attempt to thwart your efforts by hacking your visor, ejecting you from the airlock, causing reactor meltdowns Use security terminals to keep an eye on suspicious activities Call emergency meetings or report dead bodies to vote to eject the rogue AI Androids: EXTERMINATE all humans. Trick the humans into ejecting each other. Hack the systems on board to prey on the humans Features: Customize victory conditions and various cooldowns In game chat Pick your color ",
+        "about_the_game": "Play with up to 12 players online and work together to prepare to escape the space station before it is destroyed. But watch out! Androids have 'woken up' and are attempting to destroy the station and all witnesses! I am the sole developer of COUNTDOWN. New feature development has been put on hold as I focus on the release of my next title. Any game-breaking bugs will be addressed as soon as possible. Please report any via email or our discord server. In-game proximity chat! Crewmates: Complete tasks to delay the self-destruct sequence and prepare your ship for evacuation Androids will attempt to thwart your efforts by hacking your visor, ejecting you from the airlock, causing reactor meltdowns Use security terminals to keep an eye on suspicious activities Call emergency meetings or report dead bodies to vote to eject the rogue AI Androids: EXTERMINATE all humans. Trick the humans into ejecting each other. Hack the systems on board to prey on the humans Features: Customize victory conditions and various cooldowns In game chat Pick your color ",
+        "short_description": "Humans vs Androids. A game of social deduction and betrayal. Strategize, murder, trick, bluff, hack, and outwit other players to win. 1-3 Androids vs the humans. An asymmetrical multiplayer game with up to 12 players.",
+        "reviews": "",
+        "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/1445370/header.jpg?t=1629312010",
+        "website": "",
+        "support_url": "https://www.hellofriendgames.com",
+        "support_email": "hellofriendllc@gmail.com",
+        "windows": true,
+        "mac": false,
+        "linux": false,
+        "metacritic_score": 0,
+        "metacritic_url": "",
+        "achievements": 0,
+        "recommendations": 0,
+        "notes": "",
+        "supported_languages": [
+            "English"
+        ],
+        "full_audio_languages": [
+            "English"
+        ],
+        "packages": [
+            {
+                "title": "Buy COUNTDOWN",
+                "description": "",
+                "subs": [
+                    {
+                        "text": "Countdown - $0.99",
+                        "description": "",
+                        "price": 0.99
+                    }
+                ]
+            }
+        ],
+        "developers": [
+            "Hello Friend LLC"
+        ],
+        "publishers": [
+            "Hello Friend LLC"
+        ],
+        "categories": [
+            "Multi-player",
+            "PvP",
+            "Online PvP",
+            "LAN PvP",
+            "Co-op",
+            "Online Co-op",
+            "LAN Co-op"
+        ],
+        "genres": [
+            "Action",
+            "Indie",
+            "Early Access"
+        ],
+        "screenshots": [
+            "https://cdn.akamai.steamstatic.com/steam/apps/1445370/ss_32fa185ca0b08cf56f84fa54321dc1c41e4b20cb.1920x1080.jpg?t=1629312010",
+            "https://cdn.akamai.steamstatic.com/steam/apps/1445370/ss_35fe5f86d6260c838dce51cd025c06803c837b04.1920x1080.jpg?t=1629312010",
+            "https://cdn.akamai.steamstatic.com/steam/apps/1445370/ss_bdceb55e36b161a05d414dff902f7a4e0d70e87d.1920x1080.jpg?t=1629312010",
+            "https://cdn.akamai.steamstatic.com/steam/apps/1445370/ss_5588da4259e5dfb12d326d960358e036a6b1f11d.1920x1080.jpg?t=1629312010",
+            "https://cdn.akamai.steamstatic.com/steam/apps/1445370/ss_c3d1e6f228bf926f4ef30b1b1406a5a2628322dc.1920x1080.jpg?t=1629312010",
+            "https://cdn.akamai.steamstatic.com/steam/apps/1445370/ss_c4cdb0998e3d53688e7894155816644a4148d5b0.1920x1080.jpg?t=1629312010",
+            "https://cdn.akamai.steamstatic.com/steam/apps/1445370/ss_4faf1ebb9cf14008648f0be27a91b3d854adabce.1920x1080.jpg?t=1629312010",
+            "https://cdn.akamai.steamstatic.com/steam/apps/1445370/ss_6e60ece2895f1b24fbe2cf6da0e17ce0f906459e.1920x1080.jpg?t=1629312010",
+            "https://cdn.akamai.steamstatic.com/steam/apps/1445370/ss_6b7ec808865c64938595cf548ecd656f7bb4a8ff.1920x1080.jpg?t=1629312010",
+            "https://cdn.akamai.steamstatic.com/steam/apps/1445370/ss_e76da3650db3fa6b6bbdcf2db0b277c641c9b6d5.1920x1080.jpg?t=1629312010",
+            "https://cdn.akamai.steamstatic.com/steam/apps/1445370/ss_a0536bb5443b42c2080654ba51e0426b0c5f048d.1920x1080.jpg?t=1629312010",
+            "https://cdn.akamai.steamstatic.com/steam/apps/1445370/ss_11264b0d977035a1bcc5c67b2fa704ae1f69f2e4.1920x1080.jpg?t=1629312010"
+        ],
+        "movies": [
+            "http://cdn.akamai.steamstatic.com/steam/apps/256823720/movie_max.mp4?t=1614217552",
+            "http://cdn.akamai.steamstatic.com/steam/apps/256821207/movie_max.mp4?t=1612580081",
+            "http://cdn.akamai.steamstatic.com/steam/apps/256806778/movie_max.mp4?t=1604291755",
+            "http://cdn.akamai.steamstatic.com/steam/apps/256819136/movie_max.mp4?t=1611280198"
+        ],
+        "user_score": 0,
+        "score_rank": "",
+        "positive": 6,
+        "negative": 1,
+        "estimated_owners": "0 - 20000",
+        "average_playtime_forever": 0,
+        "average_playtime_2weeks": 0,
+        "median_playtime_forever": 0,
+        "median_playtime_2weeks": 0,
+        "peak_ccu": 0,
+        "tags": {
+            "Social Deduction": 205,
+            "PvP": 199,
+            "Survival": 196,
+            "Sci-fi": 193,
+            "Space": 190,
+            "Strategy": 184,
+            "Multiplayer": 181,
+            "Online Co-Op": 176,
+            "3D": 174,
+            "Third Person": 168,
+            "First-Person": 163,
+            "Psychological Horror": 158,
+            "Team-Based": 146,
+            "Action": 134,
+            "Stealth": 131,
+            "Tactical": 115,
+            "Hacking": 98,
+            "Futuristic": 96,
+            "Co-op": 82,
+            "Early Access": 67
+        }
     }
 } 

@@ -80,13 +80,20 @@ export async function getGameByTitle(title) {
   }
 }
 
-//## Task 3 - Get a particular set of data by PRICE AND add an endpoint to your REST API which returns a particular dataset in the response body- get back by name
+//## Task 3 - Get a particular set of data by PRICE  and etunrns filtered data via games prices.
+// AND add an endpoint to your REST API which returns a particular dataset in the response body- get back by name
+
+//Step 1: check access to game price
 // declare a container for all games data  by calling the function and saving it to data
 // lets find price- console.log for loop checking price of each game
-
 const allGames = await getAllGameObjects();
+console.log(allGames.length);
 for (let game of allGames) {
-  console.log(game.price);
+  console.log(typeof game.price, game.price);
 }
 
-// what are the options for price filters? - 5 and under, 10 and under
+//Step 2:
+// what are the options for price filters? - 5 and under, 10 and under,
+// declare fuction
+// for loop
+// isolate price variable and check against the filters
