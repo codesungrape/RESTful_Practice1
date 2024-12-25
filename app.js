@@ -42,7 +42,7 @@ app.get("/", async function (req, res) {
 // call the right helper function and save the output to a variable
 // return the res.json(saidvariabe)
 
-app.get("/:name", async function (req, res) {
+app.get("/game/:name", async function (req, res) {
   try {
     // save the request to a variable
     const { name } = req.params;
@@ -72,10 +72,10 @@ app.get("/:name", async function (req, res) {
 // TASK 3: Get a particular set of data (get games by price filter) AND add an endpoint to your REST API which returns a particular dataset in the response body- get back by name
 
 // set up the GET statemnt with end point
-// async ( req, res ) => {}
+// ASYNC ( req, res ) => {}
 // setup the try catch block
 // extract the query string from the req.body and save to a variable
-// use the right function with query string as the argument
+// use the right function with query string as the argument and AWAIT as it is an async fucntion
 // return the res.status and res.json in correct format.
 
 /* Valid Price Filter Options 
@@ -88,10 +88,39 @@ const priceFilterOptions = {
 */
 
 app.get("/filter", async function (req, res) {
+  // Price filter options are passed as query parameters.
+  // Example URL: http://localhost:3000/filter?priceFilter=5andUnder
+
   try {
     const priceFilter = req.query.priceFilter;
-    const filteredResults = getGamesByPrice(priceFilter);
+    console.log(priceFilter);
 
+    const priceFilterOptions = {
+      "5andUnder": 5,
+      "10andUnder": 10,
+      "15andUnder": 15,
+      "20andUnder": 20,
+    };
+
+    if (!priceFilter || !priceFilterOptions[priceFilter]) {
+      return res.status(400).json({
+        success: false,
+        message: "Invalid price filter option",
+      });
+    }
+
+    //fetch and save results
+    const filteredResults = await getGamesByPrice(priceFilter);
+
+    // Check if no results
+    if (filteredResults.length === 0) {
+      return res.status(404).json({
+        success: false,
+        message: "No games found within the price range",
+      });
+    }
+
+    //return successful response
     res.status(200).json({
       success: true,
       payload: filteredResults,

@@ -129,6 +129,6 @@ export async function getGamesByPrice(priceFilter) {
   }
 }
 
-const everythingUnder5 = await getGamesByPrice("5andUnder");
-console.log(everythingUnder5);
-console.log(everythingUnder5.length);
+// const everythingUnder5 = await getGamesByPrice("5andUnder");
+// console.log(everythingUnder5);
+// console.log(everythingUnder5.length);
