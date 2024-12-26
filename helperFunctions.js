@@ -32,7 +32,7 @@ Used in:
 */
 const cachedGameData = await getAllGameObjects();
 
-// FUNCTION TO RETURN ONLY GAME TITLES
+// FUNCTION TO RETURN ONLY GAME TITLES IN DATASET
 async function getAllGameTitles(data = cachedGameData) {
   const titles = [];
   for (let key in data) {
@@ -41,6 +41,26 @@ async function getAllGameTitles(data = cachedGameData) {
     }
   }
   return titles;
+}
+
+// 1a. FUNCTION TO RETRIVE SINGLE GAME OBJECT FILTERED BY GAME TITLE INPUT
+// 1b. FUNCTION TO SANITIZE 'TITLE' INPUT STRING
+
+function sanitize(inputString) {
+  return inputString.replace(/\s+/g, "").toLowerCase();
+}
+
+export async function getGameByTitle(title) {
+  try {
+    const sanitizedTitle = sanitize(title);
+    const cachedGameData = cachedGameData;
+    const game = cachedGameData.find(
+      (game) => sanitize(game.name) === sanitizedTitle
+    );
+    return game || "Game not found";
+  } catch (error) {
+    console.error("Error:", error);
+  }
 }
 
 // 1a. PRICE FILTER OPTIONS OBJECT
@@ -72,9 +92,8 @@ export async function getGamesByPrice(priceFilter) {
 
 // TEST IT WORKS + CHECK GAME TITLES
 const under5Games = await getGamesByPrice("5andUnder");
-console.log(under5Games.length);
 const under5GamesTitles = await getAllGameTitles(under5Games);
-console.log(under5GamesTitles.length);
+console.log(under5GamesTitles);
 
 // // FUNCTION TO RETURN SCREENSHOT OF GAME IMAGE
 // export async function getScreenshot() {
@@ -88,23 +107,3 @@ console.log(under5GamesTitles.length);
 // console.log(screenshot);
 
 //get Game by genre
-
-// 1a. FUNCTION TO RETRIVE SINGLE GAME OBJECT FILTERED BY GAME TITLE INPUT
-// 1b. FUNCTION TO SANITIZE 'TITLE' INPUT STRING
-
-function sanitize(inputString) {
-  return inputString.replace(/\s+/g, "").toLowerCase();
-}
-
-export async function getGameByTitle(title) {
-  try {
-    const sanitizedTitle = sanitize(title);
-    const cachedGameData = cachedGameData;
-    const game = cachedGameData.find(
-      (game) => sanitize(game.name) === sanitizedTitle
-    );
-    return game || "Game not found";
-  } catch (error) {
-    console.error("Error:", error);
-  }
-}
