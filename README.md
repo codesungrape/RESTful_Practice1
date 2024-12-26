@@ -24,13 +24,14 @@ Welcome to the **Build a REST API Hackathon**! Over the past week, you've been l
 
 The API will feature the following endpoints:
 
-| **HTTP Method** | **Path** | **Request Body (JSON)**                          | **Response Body (JSON)**         | **Status Code** | **Result**                         |
-|-----------------|----------|---------------------------------------------------|----------------------------------|-----------------|------------------------------------|
-| GET             | /        |                                                   | An array of all data objects    | 200             | Gets all data                      |
-| GET             | /:date   |                                                   | A matching data object          | 200             | Gets data with a matching date     |
-| POST            | /        |                                                   | A newly created data object     | 201             | Creates new data                   |
-| PATCH           | /        | `The population in ${date} was ${popByDate}`       | An edited data object           | 200             | Updates data                       |
-| DELETE          | /        |                                                   | A deleted data object           | 200             | Deletes data                       |
+| **HTTP Method** | **Path** | **Request Body (JSON)**                      | **Response Body (JSON)**     | **Status Code** | **Result**                           |
+| --------------- | -------- | -------------------------------------------- | ---------------------------- | --------------- | ------------------------------------ |
+| GET             | /        |                                              | An array of all data objects | 200             | Gets all data                        |
+| GET             | /:name   |                                              | A matching data object       | 200             | Gets data with a matching date       |
+| GET             | /filter  |                                              | All matching data objects    | 200             | Gets data which catches filter query |
+| POST            | /        |                                              | A newly created data object  | 201             | Creates new data                     |
+| PATCH           | /        | `The population in ${date} was ${popByDate}` | An edited data object        | 200             | Updates data                         |
+| DELETE          | /        |                                              | A deleted data object        | 200             | Deletes data                         |
 
 ## **Milestones**
 

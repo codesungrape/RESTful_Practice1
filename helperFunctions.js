@@ -36,25 +36,16 @@ export async function getAllGameObjects() {
 }
 
 // Helper function that returns an array with all game titles
-function getAllGameTitles() {
+async function getAllGameTitles() {
   let titles = [];
-  for (let key in data) {
-    if (data.hasOwnProperty(key)) {
-      titles.push(data[key][0]);
+  let allGames = await getAllGameObjects();
+  for (let key in allGames) {
+    if (allGames.hasOwnProperty(key)) {
+      titles.push(allGames[key].name);
     }
   }
   return titles;
 }
-[
-  "Galactic Bowling",
-  "Train Bandit",
-  "Jolt Project",
-  "Henosis",
-  "Two Weeks in Painland",
-  "Kooring VR Coding Adventure",
-  "Anarchy",
-  "Dark Throne",
-];
 
 //## Task 2 - Get a particular set of data via TTILE AND add an endpoint to your REST API which returns a particular dataset in the response body- get back by name
 
@@ -62,14 +53,11 @@ export async function getGameByTitle(title) {
   try {
     //sanitize input string
     title = title.replace(/\s+/g, "").toLowerCase();
-    console.log(title);
 
     const gamesObj = await getAllGameObjects();
 
     // use a looping mechanism if sanitized object.name === sanitized input title, return that object or retunr error msg
     for (let game of gamesObj) {
-      // find the game title in object
-      console.log(game.name);
       if (game.name.replace(/\s+/g, "").toLowerCase() === title) {
         return game;
       }
@@ -129,6 +117,27 @@ export async function getGamesByPrice(priceFilter) {
   }
 }
 
-// const everythingUnder5 = await getGamesByPrice("5andUnder");
-// console.log(everythingUnder5);
-// console.log(everythingUnder5.length);
+// TASK 4 - Get a particular the first screenshots of a specified game and return that image
+// fucntion decalration
+// try catch block
+// what object are we looking at?
+// call right function to get the game in question
+// access the screenshots[0] in the game in question
+// return that screenshot
+
+export async function getRandomScreenshot(gameName) {
+  try {
+    const game = await getGameByTitle(gameName);
+
+    let randomIndex = Math.floor(Math.random() * game.screenshots.length);
+
+    return game.screenshots[randomIndex];
+  } catch (error) {
+    console.error("No images found", error);
+  }
+}
+
+const screenshot = await getRandomScreenshot("Anarchy");
+console.log(screenshot);
+
+//get Game by genre
