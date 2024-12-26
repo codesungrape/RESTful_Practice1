@@ -97,7 +97,11 @@ export async function sortGames(keyword, data = cachedGameData) {
   const sortAscending = [...data].sort((a, b) => a.price - b.price);
   const sortDescending = [...data].sort((a, b) => b.price - a.price);
 
-  return sanitizedKeyword === "asc" ? sortAscending : sortDescending;
+  if (sanitizedKeyword === "asc") {
+    return sortAscending;
+  } else {
+    return sortDescending;
+  }
 }
 
 // // FUNCTION TO RETURN SCREENSHOT OF GAME IMAGE

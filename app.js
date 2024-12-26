@@ -148,9 +148,9 @@ app.get("/price/:priceFilter", async function (req, res) {
 //      - Log the error
 //      - Return 500 with error message
 
-app.get("/price/:AscOrDesc", async (req, res) => {
+app.get("/games/sort", async (req, res) => {
   try {
-    const ascOrDesc = req.params.AscOrDesc;
+    const { ascOrDesc } = req.query;
     const data = await getAllGameObjects();
     const sortedData = await sortGames(ascOrDesc, data);
 
@@ -173,17 +173,7 @@ app.get("/price/:AscOrDesc", async (req, res) => {
   }
 });
 
-// 1. Set up route handler for GET /price/filter
-// 2. Extract price range from query parameters (req.query)
-// 3. Validate price parameters (ensure they're correct object key)
-// 4. Try-catch block:
-//    Try:
-//      - Call async getGamesByPrice(minPrice, maxPrice)
-//      - If games found, return 200 with games data
-//      - If no games found, return 404 with "No games found" message
-//    Catch:
-//      - Log the error
-//      - Return 500 with error message
+// now that i know there is a differnce between req.query vs req.params and im a little comfortable wiht what re.params are, need to do a req.query request.
 
 /*
 
