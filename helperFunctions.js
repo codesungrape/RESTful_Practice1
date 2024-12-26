@@ -45,7 +45,6 @@ async function getAllGameTitles(data = cachedGameData) {
 
 // 1a. FUNCTION TO RETRIVE SINGLE GAME OBJECT FILTERED BY GAME TITLE INPUT
 // 1b. FUNCTION TO SANITIZE 'TITLE' INPUT STRING
-
 function sanitize(inputString) {
   if (!inputString) return "";
   return inputString.replace(/\s+/g, "").toLowerCase();
@@ -65,7 +64,6 @@ export async function getGameByTitle(title) {
 
 // 1a. PRICE FILTER OPTIONS OBJECT
 // 1b. FUNCTION TO RETURN GAMES FILTERED BY PRICE RANGE
-
 const priceFilterOptions = {
   "5andUnder": 5,
   "10andUnder": 10,
@@ -90,10 +88,17 @@ export async function getGamesByPrice(priceFilter) {
   }
 }
 
-// TEST IT WORKS + CHECK GAME TITLES
-const under5Games = await getGamesByPrice("5andUnder");
-const under5GamesTitles = await getAllGameTitles(under5Games);
-console.log(under5GamesTitles);
+// FUNCTION TO RETURN ALL GAMES SORTED ASCENDING AND DESCENDING
+export async function sortGames(keyword, data = cachedGameData) {
+  /*keyword can only be 'asc or 'desc' */
+
+  let sanitizedKeyword = sanitize(keyword);
+
+  const sortAscending = [...data].sort((a, b) => a.price - b.price);
+  const sortDescending = [...data].sort((a, b) => b.price - a.price);
+
+  return sanitizedKeyword === "asc" ? sortAscending : sortDescending;
+}
 
 // // FUNCTION TO RETURN SCREENSHOT OF GAME IMAGE
 // export async function getScreenshot() {

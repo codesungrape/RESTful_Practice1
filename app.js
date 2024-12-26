@@ -3,6 +3,7 @@ import {
   getAllGameObjects,
   getGameByTitle,
   getGamesByPrice,
+  sortGames,
   //getScreenshot,
 } from "/Users/shantirai/Desktop/Projects/Practice_back-end/RESTful_project1/helperFunctions.js";
 import express from "express";
@@ -15,16 +16,25 @@ app.use(express.json());
 
 const PORT = 3000;
 
-//Task 1 - Get all data
-// write a get reuest to endpoint and get all data
-//Add an endpoint to your REST API which returns all astronauts in the response body.
-// set up try catch block
-// call the right helper function and save the output to a variable
-// return the res.json(saidvariabe)
+// 1. HANDLE GET REQUEST FOR ALL DATA API ENDPOINT
+// listen for incoming GET requests on the root ('/') route
+// setup try catch block
+// when a GET request is made, use the ASYNC helper function getAllGameObjects() get the data from database
+// if !allData, throw error message
+// after fetching the data, send it back to client as JSON response with 200 status response
+// or catch error with 500 status
 
 app.get("/", async function (req, res) {
   try {
-    const allData = await getGameObjectData();
+    const allData = await getAllGameObjects();
+
+    if (!allData) {
+      res.status(404).json({
+        success: false,
+        message: "Data not found",
+      });
+    }
+
     res.status(200).json({
       success: true,
       payload: allData,
@@ -37,20 +47,20 @@ app.get("/", async function (req, res) {
   }
 });
 
-//## Task 2 - Get a particular set of data AND add an endpoint to your REST API which returns a particular dataset in the response body- get back by name
-// write a get request to endpoint - /:id or /:name
-// set up try catch block
-// call the right helper function and save the output to a variable
-// return the res.json(saidvariabe)
+// 2 - HANDLE GET REQUEST FOR SPECIFIC GAME BY NAME PARAMETER
+// listen for incoming GET request on the "/game/:name" endpoint route
+// setup try catch block
+// extract the request.param to a variable to use with appropriate helperFunction
+// when a GET request is made, use the ASYNC helper function getGameByTitle() get the data from database
+// if no data is returned, throw error message
+// after fetching the data, send it back to client as JSON response with 200 status response
+// or catch error with 500 status
 
 app.get("/game/:name", async function (req, res) {
   try {
-    // save the request to a variable
     const { name } = req.params;
-
     const gameDataByName = await getGameByTitle(name);
 
-    // Check if gameDataByName is an error message or valid data
     if (gameDataByName === "Error, please check input.") {
       return res.status(404).json({
         success: false,
@@ -70,32 +80,24 @@ app.get("/game/:name", async function (req, res) {
   }
 });
 
-// TASK 3: Get a particular set of data (get games by price filter) AND add an endpoint to your REST API which returns a particular dataset in the response body- get back by name
+// 3 - HANDLE REQUEST FOR SPECIFIC PRICE POINTS BY PRICEFILTER PARAMETER
+//     Example URL: http://localhost:3000/price/filter?priceFilter=5andUnder
 
-// set up the GET statemnt with end point
-// ASYNC ( req, res ) => {}
-// setup the try catch block
-// extract the query string from the req.body and save to a variable
-// use the right function with query string as the argument and AWAIT as it is an async fucntion
-// return the res.status and res.json in correct format.
+// 1. Set up route handler for GET /price/filter
+// 2. Extract price range from query parameters (req.query)
+// 3. Validate price parameters (ensure they're correct object key)
+// 4. Try-catch block:
+//    Try:
+//      - Call async getGamesByPrice(minPrice, maxPrice)
+//      - If games found, return 200 with games data
+//      - If no games found, return 404 with "No games found" message
+//    Catch:
+//      - Log the error
+//      - Return 500 with error message
 
-/* Valid Price Filter Options 
-const priceFilterOptions = {
-    "5andUnder": 5,
-    "10andUnder": 10,
-    "15andUnder": 15,
-    "20andUnder": 20,
-  };
-*/
-
-app.get("/filter", async function (req, res) {
-  // Price filter options are passed as query parameters.
-  // Example URL: http://localhost:3000/filter?priceFilter=5andUnder
-
+app.get("/price/filter", async function (req, res) {
   try {
     const priceFilter = req.query.priceFilter;
-    console.log(priceFilter);
-
     const priceFilterOptions = {
       "5andUnder": 5,
       "10andUnder": 10,
@@ -110,10 +112,8 @@ app.get("/filter", async function (req, res) {
       });
     }
 
-    //fetch and save results
     const filteredResults = await getGamesByPrice(priceFilter);
 
-    // Check if no results
     if (filteredResults.length === 0) {
       return res.status(404).json({
         success: false,
@@ -121,7 +121,6 @@ app.get("/filter", async function (req, res) {
       });
     }
 
-    //return successful response
     res.status(200).json({
       success: true,
       payload: filteredResults,
@@ -134,11 +133,58 @@ app.get("/filter", async function (req, res) {
   }
 });
 
-// TASK 4. GET REQUEST FOR GAME IMAGES BY GAMENAME
-// listen for GET on '/:id/
-// extract 'id' and fetch game data with getGameByTitle()
-// create a separate fucntion which extracts the image from the return of getGameByTitle()?
-// returns a particular random game image in the response body.
+// HANDLE REQUEST FOR GET GAME BY MIN TO MAX AND VICE VERSA
+//     keyword can only be 'asc or 'desc'
+
+// 1. Set up route handle for get /price/AscOrDesc
+// 2. Extract paramenter from the req.query (re.param)
+// 3. Set up Try-catch block:
+//   - Try:
+//      - call async sortGames(req.param, data)
+//      - If no param of data, return 404 with "No games found" message
+//      - If games found, return 200 with games data in asc or des order
+//   - Cacth:
+//      - Log the error
+//      - Return 500 with error message
+
+app.get("/price/:AscOrDesc", async (req, res) => {
+  try {
+    const ascOrDesc = req.params.AscOrDesc;
+    const data = await getAllGameObjects();
+    const sortedData = await sortGames(ascOrDesc, data);
+
+    if (!ascOrDesc || !sortedData) {
+      res.status(400).json({
+        success: false,
+        message: "Invalid inputs, please check.",
+      });
+    }
+
+    res.status(200).json({
+      success: true,
+      payload: sortedData,
+    });
+  } catch (error) {
+    res.status(500).json({
+      success: false,
+      message: "Failed to fetch data",
+    });
+  }
+});
+
+// 1. Set up route handler for GET /price/filter
+// 2. Extract price range from query parameters (req.query)
+// 3. Validate price parameters (ensure they're correct object key)
+// 4. Try-catch block:
+//    Try:
+//      - Call async getGamesByPrice(minPrice, maxPrice)
+//      - If games found, return 200 with games data
+//      - If no games found, return 404 with "No games found" message
+//    Catch:
+//      - Log the error
+//      - Return 500 with error message
+
+/*
 
 const gameChosen = getGameByTitle();
 
@@ -171,6 +217,8 @@ app.get("/images/{gameName}", async (req, res) => {
     });
   }
 });
+
+*/
 
 // Start the server and listen on the defined port
 app.listen(PORT, () => {
