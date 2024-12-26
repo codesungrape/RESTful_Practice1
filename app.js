@@ -3,6 +3,7 @@ import {
   getAllGameObjects,
   getGameByTitle,
   getGamesByPrice,
+  getScreenshot,
 } from "/Users/shantirai/Desktop/Projects/Practice_back-end/RESTful_project1/helperFunctions.js";
 import express from "express";
 
@@ -124,6 +125,44 @@ app.get("/filter", async function (req, res) {
     res.status(200).json({
       success: true,
       payload: filteredResults,
+    });
+  } catch (error) {
+    res.status(500).json({
+      success: false,
+      message: "Failed to fetch data",
+    });
+  }
+});
+
+// TASK 4. GET REQUEST FOR GAME IMAGES BY GAMENAME
+// listen for GET on '/:id/
+// extract 'id' and fetch game data with getGameByTitle()
+// create a separate fucntion which extracts the image from the return of getGameByTitle()?
+// returns a particular random game image in the response body.
+
+const gameChosen = getGameByTitle();
+
+// declare app.get with URL endpoint
+// try catch block
+// save the params to the req body to be used
+// call the right function
+// add checking mechanisms and error msg
+// res.json the right image
+
+app.get("/images/{gameName}", async (req, res) => {
+  try {
+    const gameName = req.query.gameName;
+    const image = await getScreenshot(gameName);
+
+    if (!image || !gameName) {
+      return res.status(400).json({
+        success: false,
+        message: "Invalid input or image not found",
+      });
+    }
+    res.status(200).json({
+      success: true,
+      payload: image,
     });
   } catch (error) {
     res.status(500).json({
