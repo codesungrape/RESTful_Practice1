@@ -47,13 +47,13 @@ async function getAllGameTitles(data = cachedGameData) {
 // 1b. FUNCTION TO SANITIZE 'TITLE' INPUT STRING
 
 function sanitize(inputString) {
+  if (!inputString) return "";
   return inputString.replace(/\s+/g, "").toLowerCase();
 }
 
 export async function getGameByTitle(title) {
   try {
     const sanitizedTitle = sanitize(title);
-    const cachedGameData = cachedGameData;
     const game = cachedGameData.find(
       (game) => sanitize(game.name) === sanitizedTitle
     );

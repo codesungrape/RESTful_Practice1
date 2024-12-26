@@ -3,7 +3,7 @@ import {
   getAllGameObjects,
   getGameByTitle,
   getGamesByPrice,
-  getScreenshot,
+  //getScreenshot,
 } from "/Users/shantirai/Desktop/Projects/Practice_back-end/RESTful_project1/helperFunctions.js";
 import express from "express";
 
