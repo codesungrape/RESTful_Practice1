@@ -95,9 +95,10 @@ app.get("/game/:name", async function (req, res) {
 //      - Log the error
 //      - Return 500 with error message
 
-app.get("/price/filter", async function (req, res) {
+app.get("/price/:priceFilter", async function (req, res) {
   try {
-    const priceFilter = req.query.priceFilter;
+    const priceFilter = req.params.priceFilter;
+
     const priceFilterOptions = {
       "5andUnder": 5,
       "10andUnder": 10,
