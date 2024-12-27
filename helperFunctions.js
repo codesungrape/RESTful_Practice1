@@ -104,15 +104,24 @@ export async function sortGames(keyword, data = cachedGameData) {
   }
 }
 
-// // FUNCTION TO RETURN SCREENSHOT OF GAME IMAGE
-// export async function getScreenshot() {
-//   try {
-//   } catch (error) {
-//     console.error("No images found", error);
-//   }
-// }
+// FUNCTION TO RETURN RANDOM SCREENSHOT OF SPECIFIED GAME
+export async function getScreenshotByGameName(game) {
+  try {
+    const gameData = await getGameByTitle(game);
+    if (!gameData || gameData === "Game not found") {
+      return "No game data found!";
+    }
 
-// const screenshot = await getScreenshot("Anarchy");
-// console.log(screenshot);
+    const screenshots = gameData.screenshots;
+    if (!screenshots) {
+      return "No screenshots available!";
+    }
 
-//get Game by genre
+    return screenshots[Math.floor(Math.random() * screenshots.length)];
+  } catch (error) {
+    console.error("Error:", error);
+    return "An error occurred while fetching the screenshot.";
+  }
+}
+
+// sort game by genre

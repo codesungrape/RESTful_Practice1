@@ -4,6 +4,7 @@ import {
   getGameByTitle,
   getGamesByPrice,
   sortGames,
+  getScreenshotByGameName,
   //getScreenshot,
 } from "/Users/shantirai/Desktop/Projects/Practice_back-end/RESTful_project1/helperFunctions.js";
 import express from "express";
@@ -173,33 +174,28 @@ app.get("/games/sort", async (req, res) => {
   }
 });
 
-// now that i know there is a differnce between req.query vs req.params and im a little comfortable wiht what re.params are, need to do a req.query request.
+// GET REQUEST TO RETURN SCREENSHOT IMAGE
+// 1. setup route handler with endpoint
+// 2. setup try catch block
+//    - save the param in req inside a variable
+//    - call getScreenshot(re.param)
+//    - if no param return error msg
+//    - return right image in payload
 
-/*
-
-const gameChosen = getGameByTitle();
-
-// declare app.get with URL endpoint
-// try catch block
-// save the params to the req body to be used
-// call the right function
-// add checking mechanisms and error msg
-// res.json the right image
-
-app.get("/images/{gameName}", async (req, res) => {
+app.get("/screenshot/:name", async (req, res) => {
   try {
-    const gameName = req.query.gameName;
-    const image = await getScreenshot(gameName);
+    const name = req.params.name;
+    const gameScreenshot = await getScreenshotByGameName(name);
 
-    if (!image || !gameName) {
-      return res.status(400).json({
+    if (!name || !gameScreenshot) {
+      res.status(400).json({
         success: false,
-        message: "Invalid input or image not found",
+        message: "Invalid inputs, please check.",
       });
     }
     res.status(200).json({
       success: true,
-      payload: image,
+      payload: gameScreenshot,
     });
   } catch (error) {
     res.status(500).json({
@@ -209,7 +205,7 @@ app.get("/images/{gameName}", async (req, res) => {
   }
 });
 
-*/
+// now that i know there is a differnce between req.query vs req.params and im a little comfortable wiht what re.params are, need to do a req.query request.
 
 // Start the server and listen on the defined port
 app.listen(PORT, () => {
