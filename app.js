@@ -193,10 +193,7 @@ app.get("/screenshot/:name", async (req, res) => {
         message: "Invalid inputs, please check.",
       });
     }
-    res.status(200).json({
-      success: true,
-      payload: gameScreenshot,
-    });
+    res.redirect(gameScreenshot);
   } catch (error) {
     res.status(500).json({
       success: false,
