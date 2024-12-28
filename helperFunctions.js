@@ -47,6 +47,12 @@ async function getAllGameTitles(data = cachedGameData) {
 // 1b. FUNCTION TO SANITIZE 'TITLE' INPUT STRING
 function sanitize(inputString) {
   if (!inputString) return "";
+
+  if (typeof inputString !== "string") {
+    console.error("Expected a string but got:", typeof inputString);
+    return ""; // Return a default value if inputString is not a string
+  }
+
   return inputString.replace(/\s+/g, "").toLowerCase();
 }
 
@@ -124,4 +130,24 @@ export async function getScreenshotByGameName(game) {
   }
 }
 
-// sort game by genre
+// FUNCTIONS TO RETURNS GAME BY TAG/S SELECTED
+//MVP1
+// declare function and set up parameters [one tag]
+
+export async function getGameByTag(data = cachedGameData, tag) {
+  try {
+    const result = [];
+    cachedGameData.filter((game) => {
+      if (Object.keys(game.tags).map(sanitize).includes(sanitize(tag))) {
+        result.push(game);
+      }
+    });
+    return result;
+  } catch (error) {
+    console.error("No games found - sorry!", error);
+    return [];
+  }
+}
+
+const result = await getGameByTag(cachedGameData, "Funny");
+console.log(result.length);
