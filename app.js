@@ -12,7 +12,7 @@ import express from "express";
 // Create an instance of an Express application
 const app = express();
 
-// Middleware to parse incoming JSON requests and make it available under req.body
+// Middleware to parse incoming JSON requests and make it available under req.body for POST or PUT requests
 app.use(express.json());
 
 const PORT = 3000;
@@ -200,6 +200,11 @@ app.get("/screenshot/:name", async (req, res) => {
       message: "Failed to fetch data",
     });
   }
+});
+
+// USING REQ.METHOD TO SEE HTTP METHOD USED FOR THE REQUEST
+app.all("/check", (req, res) => {
+  res.send(`Request method used: ${req.method}`);
 });
 
 // now that i know there is a differnce between req.query vs req.params and im a little comfortable wiht what re.params are, need to do a req.query request.
