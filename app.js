@@ -5,7 +5,7 @@ import {
   getGamesByPrice,
   sortGames,
   getScreenshotByGameName,
-  //getScreenshot,
+  deleteKeyAndValue,
 } from "/Users/shantirai/Desktop/Projects/Practice_back-end/RESTful_project1/helperFunctions.js";
 import express from "express";
 
@@ -15,16 +15,10 @@ const app = express();
 // Middleware to parse incoming JSON requests and make it available under req.body for POST or PUT requests
 app.use(express.json());
 
+// PORT
 const PORT = 3000;
 
 // 1. HANDLE GET REQUEST FOR ALL DATA API ENDPOINT
-// listen for incoming GET requests on the root ('/') route
-// setup try catch block
-// when a GET request is made, use the ASYNC helper function getAllGameObjects() get the data from database
-// if !allData, throw error message
-// after fetching the data, send it back to client as JSON response with 200 status response
-// or catch error with 500 status
-
 app.get("/", async function (req, res) {
   try {
     const allData = await getAllGameObjects();
@@ -203,8 +197,47 @@ app.get("/screenshot/:name", async (req, res) => {
 });
 
 // USING REQ.METHOD TO SEE HTTP METHOD USED FOR THE REQUEST
-app.all("/check", (req, res) => {
+app.all("/check", async (req, res) => {
   res.send(`Request method used: ${req.method}`);
+});
+
+// DELETE ROUTE REQUEST TO DELETE ALL OBJECT KEYS AND RETURN NEW ARRAY OF OBJECTS.
+// 1. set up route route with endpoint
+// 2. set try catch block
+//  - save variable from req.body to variable
+//  - use the corerct helperFunction
+//  - return the deleted item
+app.delete("/games/key/:keyName", async (req, res) => {
+  try {
+    const keyName = req.params.keyName;
+    if (!keyName) {
+      res.status(400).json({
+        success: false,
+        message: "Invalid keyName. Please check your input.",
+      });
+    }
+    const allGames = await getAllGameObjects();
+    const modifiedData = await deleteKeyAndValue(keyName, allGames);
+    // Handle empty results
+    if (!modifiedData || modifiedData.length === 0) {
+      return res.status(404).json({
+        success: false,
+        message: "No matching keys found for deletion.",
+      });
+    }
+
+    //success repsonse
+    res.status(200).json({
+      success: true,
+      payload: modifiedData,
+    });
+  } catch (error) {
+    console.error("Error deleting key-value pairs:", error);
+    res.status(500).json({
+      success: false,
+      message: "Internal server error. Please try again later.",
+    });
+  }
 });
 
 // now that i know there is a differnce between req.query vs req.params and im a little comfortable wiht what re.params are, need to do a req.query request.

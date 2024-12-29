@@ -159,4 +159,4 @@ export async function deleteKeyAndValue(keyName, data = cachedGameData) {
 
 const modifiedData = await deleteKeyAndValue("dlc_count", cachedGameData);
 console.log(modifiedData, "hehe");
-console.log(modifiedData.length);
+// console.log(modifiedData.length);
