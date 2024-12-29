@@ -55,3 +55,37 @@ The stretch goals below are optional, so feel free to come up with your own too.
 - For other errors, such as server errors or bad request data, return appropriate status codes like **500 Internal Server Error** or **400 Bad Request**, along with clarifying error messages.
 
 # **RESTful_Practice1**
+
+# HTTP Methods: PUT vs POST
+
+PUT Method
+Purpose: Requests for the attached entity in the request body to be stored on the server at the supplied Request-URI (Uniform Resource Identifier).
+
+Behavior: If the Request-URI refers to an existing resource, an update operation will occur. Otherwise, a create operation should happen if the Request-URI points to a valid resource.
+
+Example:
+PUT /questions/{question-id}
+
+Idempotence: PUT is idempotent—if we retry a request multiple times, it will be equivalent to a single request invocation.
+
+Use Cases:
+
+- Use PUT when we want to modify a singular resource that is already part of a resource collection.
+- PUT replaces the resource in its entirety.
+- Generally, in practice, use PUT for UPDATE operations
+
+**Alternative:**
+Use **PATCH** when you need to partially update a resource instead of replacing it entirely.
+
+**POST Method**
+Purpose: Requests that the origin server accepts the entity attached in the request body as a new subordinate of the resource identified by the Request-URL in the Request-line.
+
+Behavior: The Request-URI for POST should be a collection URI.
+
+Example:
+POST /questions
+
+Idempotence: POST is NOT idempotent—if we retry the request N times, we will end up having N resources with N different URIs created on the server.
+
+- Use POST when you want to add a child resource under resources collection.
+- Always use POST for CREATE operations
