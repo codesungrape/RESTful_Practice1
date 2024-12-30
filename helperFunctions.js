@@ -147,9 +147,9 @@ export async function getGameByTag(data = cachedGameData, [...tag]) {
 }
 
 // FUNCTION TO DELETE KEY-VALUE PARIS IN OBJECTS INSIDE AN ARRAY
-export async function deleteKeyAndValue(keyName, data = cachedGameData) {
+export async function deleteKeyValue(data = cachedGameData, keyName) {
   const modifiedData = data.map((game) => {
-    if (Object.keys(game).includes(keyName)) {
+    if (keyName in game) {
       delete game[keyName];
     }
     return game;
@@ -157,6 +157,34 @@ export async function deleteKeyAndValue(keyName, data = cachedGameData) {
   return modifiedData;
 }
 
-const modifiedData = await deleteKeyAndValue("dlc_count", cachedGameData);
-console.log(modifiedData, "hehe");
-// console.log(modifiedData.length);
+//console.log(await deleteKeyValue(cachedGameData, "dlc_count"));
+
+// FUNCTION TO DELETE MULTIPLE KEY-VALUE PARIS IN OBJECTS INSIDE AN ARRAY
+export async function deleteMultipleKeyValues(
+  data = cachedGameData,
+  ...keyNames
+) {
+  const modifiedData = data.map((game) => {
+    keyNames.forEach((key) => {
+      if (key in game) {
+        delete game[key];
+      }
+    });
+    return game;
+  });
+  return modifiedData;
+}
+
+console.log(
+  await deleteMultipleKeyValues(
+    cachedGameData,
+    "dlc_count",
+    "peak_ccu",
+    "average_playtime_forever",
+    "average_playtime_2weeks",
+    "median_playtime_forever",
+    "median_playtime_2weeks",
+    "user_score",
+    "score_rank"
+  )
+);

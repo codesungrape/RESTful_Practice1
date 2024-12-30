@@ -5,7 +5,7 @@ import {
   getGamesByPrice,
   sortGames,
   getScreenshotByGameName,
-  deleteKeyAndValue,
+  deleteKeyValues,
 } from "/Users/shantirai/Desktop/Projects/Practice_back-end/RESTful_project1/helperFunctions.js";
 import express from "express";
 
@@ -50,7 +50,6 @@ app.get("/", async function (req, res) {
 // if no data is returned, throw error message
 // after fetching the data, send it back to client as JSON response with 200 status response
 // or catch error with 500 status
-
 app.get("/game/:name", async function (req, res) {
   try {
     const { name } = req.params;
@@ -89,7 +88,6 @@ app.get("/game/:name", async function (req, res) {
 //    Catch:
 //      - Log the error
 //      - Return 500 with error message
-
 app.get("/price/:priceFilter", async function (req, res) {
   try {
     const priceFilter = req.params.priceFilter;
@@ -142,7 +140,6 @@ app.get("/price/:priceFilter", async function (req, res) {
 //   - Cacth:
 //      - Log the error
 //      - Return 500 with error message
-
 app.get("/games/sort", async (req, res) => {
   try {
     const { ascOrDesc } = req.query;
@@ -175,7 +172,6 @@ app.get("/games/sort", async (req, res) => {
 //    - call getScreenshot(re.param)
 //    - if no param return error msg
 //    - return right image in payload
-
 app.get("/screenshot/:name", async (req, res) => {
   try {
     const name = req.params.name;
@@ -217,7 +213,7 @@ app.delete("/games/key/:keyName", async (req, res) => {
       });
     }
     const allGames = await getAllGameObjects();
-    const modifiedData = await deleteKeyAndValue(keyName, allGames);
+    const modifiedData = await deleteKeyValues(keyName, allGames);
     // Handle empty results
     if (!modifiedData || modifiedData.length === 0) {
       return res.status(404).json({
