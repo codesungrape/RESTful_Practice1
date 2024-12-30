@@ -149,15 +149,16 @@ export async function getGameByTag(data = cachedGameData, [...tag]) {
 // FUNCTION TO DELETE KEY-VALUE PARIS IN OBJECTS INSIDE AN ARRAY
 export async function deleteKeyValue(data = cachedGameData, keyName) {
   const modifiedData = data.map((game) => {
-    if (keyName in game) {
-      delete game[keyName];
+    const gameCopy = { ...game };
+    if (keyName in gameCopy) {
+      delete gameCopy[keyName];
     }
-    return game;
+    return gameCopy;
   });
   return modifiedData;
 }
 
-//console.log(await deleteKeyValue(cachedGameData, "dlc_count"));
+console.log(await deleteKeyValue(cachedGameData, "dlc_count"));
 
 // FUNCTION TO DELETE MULTIPLE KEY-VALUE PARIS IN OBJECTS INSIDE AN ARRAY
 export async function deleteMultipleKeyValues(
@@ -165,26 +166,28 @@ export async function deleteMultipleKeyValues(
   ...keyNames
 ) {
   const modifiedData = data.map((game) => {
+    // // Create copy to avoid mutating original
+    const gameCopy = { ...game };
     keyNames.forEach((key) => {
-      if (key in game) {
-        delete game[key];
+      if (key in gameCopy) {
+        delete gameCopy[key];
       }
     });
-    return game;
+    return gameCopy;
   });
   return modifiedData;
 }
 
-console.log(
-  await deleteMultipleKeyValues(
-    cachedGameData,
-    "dlc_count",
-    "peak_ccu",
-    "average_playtime_forever",
-    "average_playtime_2weeks",
-    "median_playtime_forever",
-    "median_playtime_2weeks",
-    "user_score",
-    "score_rank"
-  )
-);
+// console.log(
+//   await deleteMultipleKeyValues(
+//     cachedGameData,
+//     "dlc_count",
+//     "peak_ccu",
+//     "average_playtime_forever",
+//     "average_playtime_2weeks",
+//     "median_playtime_forever",
+//     "median_playtime_2weeks",
+//     "user_score",
+//     "score_rank"
+//   )
+// );
