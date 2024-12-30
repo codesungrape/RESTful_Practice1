@@ -5,7 +5,8 @@ import {
   getGamesByPrice,
   sortGames,
   getScreenshotByGameName,
-  deleteKeyValues,
+  deleteKeyValue,
+  deleteMultipleKeyValues,
 } from "/Users/shantirai/Desktop/Projects/Practice_back-end/RESTful_project1/helperFunctions.js";
 import express from "express";
 
@@ -192,20 +193,16 @@ app.get("/screenshot/:name", async (req, res) => {
   }
 });
 
-// USING REQ.METHOD TO SEE HTTP METHOD USED FOR THE REQUEST
-app.all("/check", async (req, res) => {
-  res.send(`Request method used: ${req.method}`);
-});
-
-// DELETE ROUTE REQUEST TO DELETE ALL OBJECT KEYS AND RETURN NEW ARRAY OF OBJECTS.
+// DELETE ROUTE REQUEST TO DELETE SINGLE OBJECT KEY AND RETURN NEW ARRAY OF OBJECTS.
 // 1. set up route route with endpoint
 // 2. set try catch block
 //  - save variable from req.body to variable
 //  - use the corerct helperFunction
 //  - return the deleted item
-app.delete("/games/key/:keyName", async (req, res) => {
+app.delete("/games/delete/:keyName", async (req, res) => {
   try {
     const keyName = req.params.keyName;
+    console.log(keyName);
     if (!keyName) {
       res.status(400).json({
         success: false,
@@ -213,10 +210,10 @@ app.delete("/games/key/:keyName", async (req, res) => {
       });
     }
     const allGames = await getAllGameObjects();
-    const modifiedData = await deleteKeyValues(keyName, allGames);
+    const modifiedData = await deleteKeyValue(allGames, keyName);
     // Handle empty results
     if (!modifiedData || modifiedData.length === 0) {
-      return res.status(404).json({
+      return res.status(400).json({
         success: false,
         message: "No matching keys found for deletion.",
       });
@@ -236,7 +233,45 @@ app.delete("/games/key/:keyName", async (req, res) => {
   }
 });
 
-// now that i know there is a differnce between req.query vs req.params and im a little comfortable wiht what re.params are, need to do a req.query request.
+// DELETE ROUTE REQUEST TO DELETE MULTIPLE OBJECT KEYS AND RETURN NEW ARRAY OF OBJECTS.
+// 1. SET UP DELETE HANDLER WITH ENDPOINT URL
+// 2. SET UP TRY CATCH BLOCK
+// 3. SAVE THE VARIABLE FROM THE REQ.BODY - PARAMS OR QUERY?
+// 4. CHECK VARIABLE EXISTS
+// 4. CALL THE HANDLER FUNCTION DELETEMULTIPLEKEYVALUES WITH VARIABLE
+// 5. CHECK FOR RETURN VALUE OF HANDLER FUCNTION
+// 6. SHOW SUCCESS OBJECT AND RES.STATUS
+app.delete("/games/delete-keys", async (req, res) => {
+  try {
+    const keyNames = req.query.keyNames;
+    if (!keyNames) {
+      return res.status(400).json({
+        success: false,
+        message: "keyNames query parameter is required.",
+      });
+    }
+    const keyArray = keyNames.split(",").map((key) => key.trim());
+    console.log(keyArray);
+    const allData = await getAllGameObjects();
+    const newData = await deleteMultipleKeyValues(allData, ...keyArray);
+
+    res.status(200).json({
+      success: true,
+      payload: newData,
+    });
+  } catch (error) {
+    console.error("Error deleting key-value pairs:", error);
+    res.status(500).json({
+      success: false,
+      message: "Internal server error. Please try again later.",
+    });
+  }
+});
+
+// USING REQ.METHOD TO SEE HTTP METHOD USED FOR THE REQUEST
+app.all("/check", async (req, res) => {
+  res.send(`Request method used: ${req.method}`);
+});
 
 // Start the server and listen on the defined port
 app.listen(PORT, () => {

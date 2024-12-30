@@ -158,8 +158,6 @@ export async function deleteKeyValue(data = cachedGameData, keyName) {
   return modifiedData;
 }
 
-console.log(await deleteKeyValue(cachedGameData, "dlc_count"));
-
 // FUNCTION TO DELETE MULTIPLE KEY-VALUE PARIS IN OBJECTS INSIDE AN ARRAY
 export async function deleteMultipleKeyValues(
   data = cachedGameData,
@@ -188,6 +186,7 @@ export async function deleteMultipleKeyValues(
 //     "median_playtime_forever",
 //     "median_playtime_2weeks",
 //     "user_score",
-//     "score_rank"
+//     "score_rank",
+//     "estimated_owners"
 //   )
 // );
