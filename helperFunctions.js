@@ -37,7 +37,7 @@ async function getAllGameTitles(data = cachedGameData) {
   const titles = [];
   for (let key in data) {
     if (data.hasOwnProperty(key)) {
-      titles.push(data[key].name);
+      titles.push(data[key].game_name);
     }
   }
   return titles;
@@ -176,17 +176,58 @@ export async function deleteMultipleKeyValues(
   return modifiedData;
 }
 
-// console.log(
-//   await deleteMultipleKeyValues(
-//     cachedGameData,
-//     "dlc_count",
-//     "peak_ccu",
-//     "average_playtime_forever",
-//     "average_playtime_2weeks",
-//     "median_playtime_forever",
-//     "median_playtime_2weeks",
-//     "user_score",
-//     "score_rank",
-//     "estimated_owners"
-//   )
-// );
+// FUNCTION TO CHECK IF NEW DATA OBJECT HAS REQUIRED KEYS AND RETURN NEW OBJECT
+// NEW GAME OBJECT TO USE
+export async function createNewGameObject(gameObject) {
+  const requiredTemplate = {
+    game_name: "",
+    release_date: "",
+    price: 0,
+    short_description: "",
+    developers: [],
+    publishers: [],
+    categories: [],
+    genres: [],
+    screenshots: [],
+    tags: [],
+  };
+
+  let newGameObject = {};
+
+  for (const key in requiredTemplate) {
+    if (!(key in gameObject)) {
+      throw new Error(`Missing key: ${key}`);
+    } else {
+      newGameObject = { ...gameObject };
+    }
+  }
+  return newGameObject;
+}
+const gameObject = {
+  game_name: "CyberQuest",
+  release_date: "2023-11-15",
+  price: 19.99,
+  short_description:
+    "An action-packed sci-fi RPG where players explore alien worlds.",
+  developers: ["Galactic Studios"],
+  publishers: ["Nova Games"],
+  categories: ["Single-player", "Multiplayer", "Co-op"],
+  genres: ["Action", "RPG", "Adventure"],
+  screenshots: [
+    "https://example.com/screenshot1.jpg",
+    "https://example.com/screenshot2.jpg",
+  ],
+  tags: ["Sci-fi", "Exploration", "Open World", "Story Rich"],
+};
+
+//FUNCTION TO ADD CREATED NEW OBJECT TO DATABASE
+export async function addGameObject(newObjData, data = cachedGameData) {
+  const newGameObj = await createNewGameObject(newObjData);
+  const database = data;
+
+  if (!newGameObj || !database) {
+    throw new Error("Invalid input: newGameObj or database is missing");
+  }
+  database.push(newGameObj);
+  return database;
+}

@@ -7,6 +7,8 @@ import {
   getScreenshotByGameName,
   deleteKeyValue,
   deleteMultipleKeyValues,
+  addGameObject,
+  createNewGameObject,
 } from "/Users/shantirai/Desktop/Projects/Practice_back-end/RESTful_project1/helperFunctions.js";
 import express from "express";
 
@@ -19,6 +21,7 @@ app.use(express.json());
 // PORT
 const PORT = 3000;
 
+/*             GET REQUESTS            */
 // 1. HANDLE GET REQUEST FOR ALL DATA API ENDPOINT
 app.get("/", async function (req, res) {
   try {
@@ -192,6 +195,81 @@ app.get("/screenshot/:name", async (req, res) => {
     });
   }
 });
+
+/*                  POST REQUESTS                  */
+
+// POST REQUEST TO CREATE A NEW OBJECT AND RETURN NEW OBJECT PAYLOAD
+app.post("/game", async (req, res) => {
+  try {
+    /* Req.body to insert into postman
+        {
+        "game_name": "CyberQuest",
+        "release_date": "2023-11-15",
+        "price": 19.99,
+        "short_description":
+            "An action-packed sci-fi RPG where players explore alien worlds.",
+        "developers": ["Galactic Studios"],
+        "publishers": ["Nova Games"],
+        "categories": ["Single-player", "Multiplayer", "Co-op"],
+        "genres": ["Action", "RPG", "Adventure"],
+        "screenshots": [
+            "https://example.com/screenshot1.jpg",
+            "https://example.com/screenshot2.jpg"
+        ],
+        "tags": ["Sci-fi", "Exploration", "Open World", "Story Rich"]
+        }
+        */
+    if (!req.body) {
+      throw new Error(`Error: ${req.body}`);
+    }
+
+    const newObj = await createNewGameObject(req.body);
+
+    res.status(201).json({
+      success: true,
+      payload: newObj,
+    });
+  } catch (error) {
+    res.status(500).json({
+      success: false,
+      message: "Failed to fetch data",
+    });
+  }
+});
+
+// POST REQUEST TO CREATE A NEW OBJECT AND NEW DATABASE AS PAYLOAD
+// create post and endpoint
+// try and catch
+// save new object to variable
+// save req.body to variable
+// use addGameObj with req.body
+// check for error and handle error
+// response when successful
+app.post("/games", async (req, res) => {
+  try {
+    const newGameObj = await createNewGameObject(req.body);
+    const data = await getAllGameObjects();
+    const newDatabase = await addGameObject(newGameObj, data);
+
+    if (!newGameObj || !data || !newDatabase) {
+      throw new Error(
+        "Invalid input: newGameObj or data or newDatabase is missing"
+      );
+    }
+
+    res.status(201).json({
+      success: true,
+      payload: newDatabase,
+    });
+  } catch (error) {
+    res.status(500).json({
+      success: false,
+      message: "Failed to fetch data",
+    });
+  }
+});
+
+/*                  DELETE REQUESTS                 */
 
 // DELETE ROUTE REQUEST TO DELETE SINGLE OBJECT KEY AND RETURN NEW ARRAY OF OBJECTS.
 // 1. set up route route with endpoint

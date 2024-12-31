@@ -1,7 +1,7 @@
  {
     "Galactic Bowling": 
     {
-        "name": "Galactic Bowling",
+        "game_name": "Galactic Bowling",
         "release_date": "Oct 21, 2008",
         "required_age": 0,
         "price": 19.99,
@@ -90,7 +90,7 @@
     },
     "Train Bandit": 
     {
-        "name": "Train Bandit",
+        "game_name": "Train Bandit",
         "release_date": "Oct 12, 2017",
         "required_age": 0,
         "price": 0.99,
@@ -202,7 +202,7 @@
 
     "Jolt Project": 
     {
-        "name": "Jolt Project",
+        "game_name": "Jolt Project",
         "release_date": "Nov 17, 2021",
         "required_age": 0,
         "price": 4.99,
@@ -282,7 +282,7 @@
     },
     "Henosis": 
     {
-        "name": "Henosis",
+        "game_name": "Henosis",
         "release_date": "Jul 23, 2020",
         "required_age": 0,
         "price": 5.99,
@@ -391,7 +391,7 @@
     },
     "Two Weeks in Painland": 
     {
-        "name": "Two Weeks in Painland",
+        "game_name": "Two Weeks in Painland",
         "release_date": "Feb 3, 2020",
         "required_age": 0,
         "price": 0.0,
@@ -482,7 +482,7 @@
     }, 
     "Kooring VR Coding Adventure": 
     {
-        "name": "Kooring VR Coding Adventure",
+        "game_name": "Kooring VR Coding Adventure",
         "release_date": "Aug 2020",
         "required_age": 0,
         "price": 8.49,
@@ -589,7 +589,7 @@
     },
     "Anarchy": 
     {
-        "name": "ANARCHY",
+        "game_name": "ANARCHY",
         "release_date": "May 7, 2020",
         "required_age": 0,
         "price": 0.0,
@@ -687,7 +687,7 @@
     },
     "Dark Throne": 
     {
-        "name": "Dark Throne",
+        "game_name": "Dark Throne",
         "release_date": "Mar 3, 2017",
         "required_age": 0,
         "price": 0.99,
@@ -780,7 +780,7 @@
     },
     "Deadfall Adventures": 
     {
-        "name": "Deadfall Adventures",
+        "game_name": "Deadfall Adventures",
         "release_date": "Nov 15, 2013",
         "required_age": 0,
         "price": 19.99,
@@ -913,7 +913,7 @@
     },
     "Who We Are Now": 
     {
-        "name": "Who We Are Now",
+        "game_name": "Who We Are Now",
         "release_date": "May 7, 2019",
         "required_age": 0,
         "price": 14.99,
@@ -989,7 +989,7 @@
     },
     "Reigns: Game of Thrones": 
     {
-        "name": "Reigns: Game of Thrones",
+        "game_name": "Reigns: Game of Thrones",
         "release_date": "Oct 18, 2018",
         "required_age": 0,
         "price": 3.99,
@@ -1103,7 +1103,7 @@
     },
     "CasinoRPG": 
     {
-        "name": "CasinoRPG",
+        "game_name": "CasinoRPG",
         "release_date": "Jan 16, 2018",
         "required_age": 0,
         "price": 0.0,
@@ -1203,7 +1203,7 @@
     },
     "Fuyu no Tsuma": 
     {
-        "name": "Fuyu no Tsuma",
+        "game_name": "Fuyu no Tsuma",
         "release_date": "Oct 15, 2021",
         "required_age": 0,
         "price": 1.99,
@@ -1301,7 +1301,7 @@
     },
     "A Journey Through Valhalla": 
     {
-        "name": "A Journey Through Valhalla",
+        "game_name": "A Journey Through Valhalla",
         "release_date": "Sep 12, 2021",
         "required_age": 0,
         "price": 5.99,
@@ -1404,7 +1404,7 @@
     },
     "Countdown": 
     {
-        "name": "COUNTDOWN",
+        "game_name": "COUNTDOWN",
         "release_date": "Jan 10, 2021",
         "required_age": 0,
         "price": 0.99,
